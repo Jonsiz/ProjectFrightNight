@@ -59,7 +59,7 @@ MonoBehaviour:
   - id: 2
     fields:
     - title: Name
-      value: Cashier 1
+      value: Rude Cashier
       type: 0
       typeString: 
     - title: Pictures
@@ -81,7 +81,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Name
-      value: Cashier 2
+      value: Nice Cashier
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -103,7 +103,7 @@ MonoBehaviour:
   - id: 4
     fields:
     - title: Name
-      value: Door Guard
+      value: Security Guard
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -125,7 +125,7 @@ MonoBehaviour:
   - id: 5
     fields:
     - title: Name
-      value: NPC 1
+      value: Trendy Girl
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -147,7 +147,7 @@ MonoBehaviour:
   - id: 6
     fields:
     - title: Name
-      value: NPC 2
+      value: Thrifty Woman
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -169,7 +169,7 @@ MonoBehaviour:
   - id: 7
     fields:
     - title: Name
-      value: NPC 3
+      value: Shopper
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -191,7 +191,7 @@ MonoBehaviour:
   - id: 8
     fields:
     - title: Name
-      value: NPC 4
+      value: Disgruntled Man
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -213,7 +213,7 @@ MonoBehaviour:
   - id: 9
     fields:
     - title: Name
-      value: NPC 5
+      value: Fashionista
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -408,6 +408,50 @@ MonoBehaviour:
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
+  - id: 18
+    fields:
+    - title: Name
+      value: Indecisive Woman
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
+  - id: 19
+    fields:
+    - title: Name
+      value: Nice Grandma
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
   items:
   - id: 2
     fields:
@@ -432,7 +476,7 @@ MonoBehaviour:
     - title: Name
       value: Leave Store
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -440,19 +484,19 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Success Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Failure Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: State
       value: unassigned
       type: 0
-      typeString: 
+      typeString: CustomFieldType_QuestState
     - title: Is Item
       value: False
       type: 2
@@ -460,31 +504,23 @@ MonoBehaviour:
     - title: Display Name
       value: Find a way out of the store
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Trackable
       value: True
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Entry Count
-      value: 2
+      value: 7
       type: 1
       typeString: CustomFieldType_Number
     - title: Entry 1 State
-      value: active
+      value: unassigned
       type: 0
-      typeString: 
+      typeString: CustomFieldType_QuestState
     - title: Entry 1
-      value: Check 4 Racks then return to guard
+      value: Search for your mom in the store
       type: 0
-      typeString: 
-    - title: Entry 2 State
-      value: active
-      type: 0
-      typeString: 
-    - title: Entry 2
-      value: 'Talk to workers '
-      type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Abandonable
       value: False
       type: 2
@@ -493,6 +529,54 @@ MonoBehaviour:
       value: True
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Entry 2 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 2
+      value: Search racks near entrance
+      type: 0
+      typeString: 
+    - title: Entry 3 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 3
+      value: Search racks near checkout area
+      type: 0
+      typeString: 
+    - title: Entry 4
+      value: Search changing rooms
+      type: 0
+      typeString: 
+    - title: Entry 4 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 5
+      value: Search racks near Christmas tree
+      type: 0
+      typeString: 
+    - title: Entry 5 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 7
+      value: 'Talk to workers '
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Entry 7 State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Entry 6
+      value: Return to Security Guard
+      type: 0
+      typeString: 
+    - title: Entry 6 State
+      value: unassigned
+      type: 0
+      typeString: 
   - id: 4
     fields:
     - title: Name
@@ -540,7 +624,7 @@ MonoBehaviour:
       type: 1
       typeString: CustomFieldType_Number
     - title: Entry 1 State
-      value: active
+      value: unassigned
       type: 0
       typeString: 
     - title: Entry 1
@@ -651,20 +735,6 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
-  - id: 8
-    fields:
-    - title: Name
-      value: CheckRacks
-      type: 0
-      typeString: 
-    - title: Initial Value
-      value: 0
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
   - id: 9
     fields:
     - title: Name
@@ -696,7 +766,7 @@ MonoBehaviour:
   - id: 11
     fields:
     - title: Name
-      value: CheckedRack3
+      value: CheckedChangingRoom
       type: 0
       typeString: 
     - title: Initial Value
@@ -711,6 +781,34 @@ MonoBehaviour:
     fields:
     - title: Name
       value: CheckedRack4
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 13
+    fields:
+    - title: Name
+      value: Polkadots
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 14
+    fields:
+    - title: Name
+      value: CheckedRoom
       type: 0
       typeString: 
     - title: Initial Value
@@ -890,7 +988,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
+        value: 
         type: 0
         typeString: 
       conversationID: 1
@@ -915,7 +1017,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 81
+        y: 79.93617
         width: 160
         height: 30
     - id: 2
@@ -961,7 +1063,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
         type: 0
         typeString: 
       conversationID: 1
@@ -1032,7 +1134,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1057,7 +1159,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 18
-        y: 211
+        y: 209.93619
         width: 160
         height: 30
     - id: 4
@@ -1103,7 +1205,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1168,7 +1270,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1185,15 +1287,15 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: Variable["Talked_to_Door_Guard"] == true and (CurrentQuestEntryState("Leave
-        Store", 2) == "active")
+      conditionsString: Variable["Talked_to_Door_Guard"] == true and (Variable["Cashier_Annoyed"]
+        == false)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 262
+        x: 263.06384
         y: 88
         width: 160
         height: 30
@@ -1224,7 +1326,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: No, but there is a guy that's block-
+        value: No, but there is a man that's block-
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1240,7 +1342,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
         type: 0
         typeString: 
       conversationID: 1
@@ -1264,8 +1366,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 264
-        y: 137
+        x: 266.12766
+        y: 133.8085
         width: 160
         height: 30
     - id: 7
@@ -1311,7 +1413,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1335,7 +1437,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 264
+        x: 265.06384
         y: 187
         width: 160
         height: 30
@@ -1382,7 +1484,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
         type: 0
         typeString: 
       conversationID: 1
@@ -1453,7 +1555,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1518,7 +1620,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
         type: 0
         typeString: 
       conversationID: 1
@@ -1573,7 +1675,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I'm calling security.
+        value: If you don't leave me alone I'll call security.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1589,7 +1691,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1611,14 +1713,14 @@ MonoBehaviour:
         y: 139
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 25.297882}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.94000006
   - id: 2
     fields:
     - title: Title
       value: Cashier 2
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -1626,7 +1728,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 1
       type: 5
@@ -1781,7 +1883,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -1852,7 +1954,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -1862,19 +1964,25 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 2
+        destinationConversationID: 2
+        destinationDialogueID: 33
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 'SetQuestState("Find shirt", "active");
 
         SetQuestEntryState("Leave
-        Store", 2, "success")'
+        Store", 7, "success")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 250
-        y: 278
+        y: 276.82355
         width: 160
         height: 30
     - id: 3
@@ -1920,7 +2028,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -1945,7 +2053,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 460
+        x: 462
         y: 226
         width: 160
         height: 30
@@ -1992,7 +2100,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2017,7 +2125,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 460
-        y: 277
+        y: 278.36987
         width: 160
         height: 30
     - id: 5
@@ -2063,7 +2171,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2135,7 +2243,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 2
@@ -2159,7 +2267,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 460
+        x: 461
         y: 376
         width: 160
         height: 30
@@ -2190,7 +2298,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Sounds like your mom is missing hold on.
+        value: 'I see. I''ll need to call the code. '
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2206,7 +2314,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2220,7 +2328,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 7
         destinationConversationID: 2
-        destinationDialogueID: 8
+        destinationDialogueID: 25
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2231,7 +2339,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 460
-        y: 426
+        y: 438.65826
         width: 160
         height: 30
     - id: 8
@@ -2261,7 +2369,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Attention shoppers '
+        value: Adam you have a call at the cash wrap.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2277,7 +2385,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2301,8 +2409,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 460
-        y: 476
+        x: 459.9671
+        y: 540.52405
         width: 160
         height: 30
     - id: 9
@@ -2332,7 +2440,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Would the mother of their lost child return to the Always 25 store.
+        value: Adam to the cash wrap.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2348,7 +2456,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2362,7 +2470,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 9
         destinationConversationID: 2
-        destinationDialogueID: 13
+        destinationDialogueID: 29
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2372,8 +2480,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 461
-        y: 526
+        x: 460.3177
+        y: 600.38654
         width: 160
         height: 30
     - id: 11
@@ -2419,7 +2527,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2437,8 +2545,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 40
-        y: 176
+        x: 41
+        y: 173.64706
         width: 160
         height: 30
     - id: 12
@@ -2484,7 +2592,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2502,7 +2610,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["Found_Shirt"] == false  and (CurrentQuestEntryState("Leave
-        Store", 2) == "active")
+        Store", 7) == "active")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -2510,10 +2618,307 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 254
-        y: 144
+        y: 143
         width: 160
         height: 30
-    - id: 13
+    - id: 25
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Wait here.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 25
+        destinationConversationID: 2
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 460
+        y: 489.02808
+        width: 160
+        height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'SwitchCamera(Cutaway 1_1);
+
+          SendMessage(SetHiding,front_rack
+          (1),Child_1);
+
+          MoveTo(front_rack (1),Child_1,0.1);
+
+          SendMessage(ActivateEnemy,true,SecurityGuard);
+
+          SetActive(Exit,true);
+
+          SetActive(GameOverBox,true);
+
+          Delay(2.5)'
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 29
+        destinationConversationID: 2
+        destinationDialogueID: 30
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 463.84424
+        y: 674.1427
+        width: 160
+        height: 30
+    - id: 30
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: ???
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SwitchCamera(Cutaway 1_2);Delay(2.5);AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 30
+        destinationConversationID: 2
+        destinationDialogueID: 31
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 465.0843
+        y: 727.17957
+        width: 160
+        height: 30
+    - id: 31
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Wait...where'd they go?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 31
+        destinationConversationID: 2
+        destinationDialogueID: 32
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 465.0843
+        y: 778.2105
+        width: 160
+        height: 30
+    - id: 32
       fields:
       - title: Title
         value: New Dialogue Entry
@@ -2556,7 +2961,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Fade(out#000000)
+        value: SetActive(InstructionText,true);
         type: 0
         typeString: 
       conversationID: 2
@@ -2574,16 +2979,81 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 461
-        y: 576
+        x: 465.0843
+        y: 828.2105
         width: 160
         height: 30
-    canvasScrollPosition: {x: 79.173805, y: 132.12517}
-    canvasZoom: 0.73000026
+    - id: 33
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I think I saw the shirt in one of those racks I checked.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 255.10959
+        y: 329.56326
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 20.547928}
+    canvasZoom: 0.7300005
   - id: 3
     fields:
     - title: Title
-      value: Door Guard
+      value: Security Guard
       type: 0
       typeString: 
     - title: Pictures
@@ -2688,6 +3158,12 @@ MonoBehaviour:
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
+      - originConversationID: 3
+        originDialogueID: 0
+        destinationConversationID: 3
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -2742,7 +3218,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -2797,7 +3273,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Well, duh this is the exit. But I can't just let a little kid wander
+        value: Well, yeah this is the exit. But I can't just let a little kid wander
           around the mall without their parent.
         type: 0
         typeString: 
@@ -2814,7 +3290,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -2885,7 +3361,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -2902,7 +3378,17 @@ MonoBehaviour:
         SetQuestEntryState("Leave
         Store", 1, "active");
 
-        SetQuestState("Leave Store", "active")'
+        SetQuestState("Leave Store", "active");
+
+        SetQuestEntryState("Leave
+        Store", 2, "active");
+
+        SetQuestEntryState("Leave Store", 3, "active");
+
+        SetQuestEntryState("Leave
+        Store", 4, "active");
+
+        SetQuestEntryState("Leave Store", 5, "active")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2955,7 +3441,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -2965,22 +3451,18 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 4
-        destinationConversationID: 3
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 2
-      conditionsString: 'Variable["Talked_to_Door_Guard"] == true '
+      outgoingLinks: []
+      conditionsString: CurrentQuestEntryState("Leave Store", 2) == "active" or (CurrentQuestEntryState("Leave
+        Store", 3) == "active") or (CurrentQuestEntryState("Leave Store", 4) == "active")
+        or (CurrentQuestEntryState("Leave Store", 5) == "active")
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 276
-        y: 145
+        x: 275.99997
+        y: 143.93617
         width: 160
         height: 30
     - id: 5
@@ -3026,7 +3508,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3043,17 +3525,15 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: Variable["CheckedRack1"] == true and (Variable["CheckedRack2"]
-        == true) and (Variable["CheckedRack3"] == true) and (Variable["CheckedRack4"]
-        == true)
+      conditionsString: CurrentQuestEntryState("Leave Store", 6) == "active"
       userScript: SetQuestEntryState("Leave Store", 1, "success")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 541.8723
-        y: 151
+        x: 542.93616
+        y: 149.93617
         width: 160
         height: 30
     - id: 6
@@ -3083,7 +3563,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Sure you don't. I bet you're just trying to sneak out and see Santa.
+        value: Sure you can't. I bet you're just trying to sneak out and see Santa.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3099,7 +3579,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});;
         type: 0
         typeString: 
       conversationID: 3
@@ -3170,7 +3650,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3182,7 +3662,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: SetQuestEntryState("Leave Store", 2, "active")
+      userScript: 'SetQuestEntryState("Leave Store", 7, "active");
+
+        SetQuestEntryState("Leave
+        Store", 6, "success")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3235,7 +3718,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3252,7 +3735,7 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("Leave Store") == "unassigned"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -3358,7 +3841,220 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 0
+        destinationConversationID: 4
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'Mom.... '
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 1
+        destinationConversationID: 4
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Mom!
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 2
+        destinationConversationID: 4
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 130
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Where are you?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
@@ -3369,7 +4065,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 30
+        y: 180
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -3530,7 +4226,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -3601,7 +4297,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -3666,7 +4362,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -3858,7 +4554,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -3929,7 +4625,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4000,7 +4696,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4037,11 +4733,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 6
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4065,7 +4761,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4084,7 +4780,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 328.73785
-        y: 47.961136
+        y: 49.137604
         width: 160
         height: 30
     - id: 5
@@ -4130,7 +4826,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4316,7 +5012,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 7
@@ -4334,12 +5030,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 34
-        y: 144
+        x: 37
+        y: 142.96907
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.97000015
   - id: 8
     fields:
     - title: Title
@@ -4359,7 +5055,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 8
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -4401,7 +5097,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: -1
+        value: 8
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4496,7 +5192,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -4567,7 +5263,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -4638,7 +5334,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -4703,7 +5399,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -4731,7 +5427,7 @@ MonoBehaviour:
         y: 132
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 58}
     canvasZoom: 1
   - id: 9
     fields:
@@ -4835,79 +5531,16 @@ MonoBehaviour:
         destinationDialogueID: 9
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 195
-        y: 43
-        width: 160
-        height: 30
-    - id: 1
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 9
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: Looks Good
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
-        type: 0
-        typeString: 
-      - title: Response Menu Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 9
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 1
+        originDialogueID: 0
         destinationConversationID: 9
-        destinationDialogueID: 2
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      - originConversationID: 9
+        originDialogueID: 0
+        destinationConversationID: 9
+        destinationDialogueID: 8
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4917,8 +5550,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 75
-        y: 198
+        x: 195
+        y: 43
         width: 160
         height: 30
     - id: 2
@@ -4964,7 +5597,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5035,7 +5668,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Audio(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5058,77 +5691,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 75
         y: 297
-        width: 160
-        height: 30
-    - id: 4
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 9
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: Uhh...
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
-        type: 0
-        typeString: 
-      conversationID: 9
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 9
-        originDialogueID: 4
-        destinationConversationID: 9
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 258
-        y: 205
         width: 160
         height: 30
     - id: 5
@@ -5174,7 +5736,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5245,7 +5807,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Audio(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5266,7 +5828,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 258
+        x: 259.2195
         y: 305
         width: 160
         height: 30
@@ -5313,7 +5875,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5379,7 +5941,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5445,7 +6007,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Audio(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -5463,25 +6025,13 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 9
         destinationConversationID: 9
-        destinationDialogueID: 1
+        destinationDialogueID: 5
         isConnector: 0
         priority: 2
       - originConversationID: 9
         originDialogueID: 9
         destinationConversationID: 9
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      - originConversationID: 9
-        originDialogueID: 9
-        destinationConversationID: 9
-        destinationDialogueID: 7
-        isConnector: 0
-        priority: 2
-      - originConversationID: 9
-        originDialogueID: 9
-        destinationConversationID: 9
-        destinationDialogueID: 8
+        destinationDialogueID: 2
         isConnector: 0
         priority: 2
       conditionsString: Variable["Talked_to_Fashionista"] == false
@@ -5491,12 +6041,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 197.21951
-        y: 111
+        x: 189.90244
+        y: 114.65854
         width: 160
         height: 30
-    canvasScrollPosition: {x: 18.738028, y: 13.67702}
-    canvasZoom: 0.8200002
+    canvasScrollPosition: {x: 36.99997, y: 17}
+    canvasZoom: 1.0000001
   - id: 10
     fields:
     - title: Title
@@ -5625,11 +6175,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 10
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -5653,7 +6203,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 10
@@ -5833,7 +6383,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -5858,7 +6408,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 26
-        y: 185
+        y: 186
         width: 160
         height: 30
     - id: 2
@@ -5904,7 +6454,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -5923,7 +6473,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 27
-        y: 251
+        y: 252
         width: 160
         height: 30
     - id: 3
@@ -5969,7 +6519,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -5997,7 +6547,7 @@ MonoBehaviour:
         y: 120
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 33}
     canvasZoom: 1
   - id: 12
     fields:
@@ -6157,7 +6707,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: She's not here either.
+        value: She's not here.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6173,7 +6723,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -6183,16 +6733,26 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: ' (CurrentQuestEntryState("Leave Store", 1) == "active")'
-      userScript: Variable["CheckedRack1"] = true;
+      outgoingLinks:
+      - originConversationID: 12
+        originDialogueID: 1
+        destinationConversationID: 12
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
+      conditionsString: ' (CurrentQuestEntryState("Leave Store", 1) == "active")
+        and (Variable["CheckedRack1"] == false)'
+      userScript: 'Variable["CheckedRack1"] = true;
+
+        SetQuestEntryState("Leave
+        Store", 2, "success")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 454.4286
-        y: 145
+        x: 452.51428
+        y: 143.57144
         width: 160
         height: 30
     - id: 2
@@ -6238,7 +6798,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -6303,7 +6863,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -6368,7 +6928,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Clothing Rack/foley_cloth_light_fast_movement_15);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -6390,8 +6950,76 @@ MonoBehaviour:
         y: 147
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7000003
+    - id: 5
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I think I've checked everywhere.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 12
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: CurrentQuestEntryState("Leave Store", 2) == "success" and
+        (CurrentQuestEntryState("Leave Store", 3) == "success") and (CurrentQuestEntryState("Leave
+        Store", 4) == "success") and (CurrentQuestEntryState("Leave Store", 5) ==
+        "success")
+      userScript: SetQuestEntryState("Leave Store", 6, "active")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 453.45776
+        y: 215
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 22.330063, y: 23.300964}
+    canvasZoom: 1.03
   - id: 13
     fields:
     - title: Title
@@ -6560,7 +7188,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 13
@@ -6609,7 +7237,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Mom isn't in that one either.
+        value: Mom isn't behind here.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6625,7 +7253,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});;
         type: 0
         typeString: 
       conversationID: 13
@@ -6635,9 +7263,19 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active"
-      userScript: Variable["CheckedRack2"] = true
+      outgoingLinks:
+      - originConversationID: 13
+        originDialogueID: 2
+        destinationConversationID: 13
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active" and
+        (Variable["CheckedRoom"] == false)
+      userScript: 'SetQuestEntryState("Leave Store", 5, "success");
+
+        Variable["CheckedRoom"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6690,7 +7328,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 13
@@ -6712,12 +7350,80 @@ MonoBehaviour:
         y: 130
         width: 160
         height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I think I've checked everywhere.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 13
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: CurrentQuestEntryState("Leave Store", 2) == "success" and
+        (CurrentQuestEntryState("Leave Store", 3) == "success") and (CurrentQuestEntryState("Leave
+        Store", 4) == "success") and (CurrentQuestEntryState("Leave Store", 5) ==
+        "success")
+      userScript: SetQuestEntryState("Leave Store", 6, "active")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 261
+        y: 234
+        width: 160
+        height: 30
     canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 1
   - id: 14
     fields:
     - title: Title
-      value: Clothing Rack C
+      value: 
       type: 0
       typeString: 
     - title: Pictures
@@ -7204,7 +7910,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 15
@@ -7253,7 +7959,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Nothing.
+        value: Nope.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -7269,7 +7975,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 15
@@ -7279,16 +7985,26 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active"
-      userScript: Variable["CheckedRack4"] = true
+      outgoingLinks:
+      - originConversationID: 15
+        originDialogueID: 2
+        destinationConversationID: 15
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active" and
+        (Variable["CheckedRack4"] == false)
+      userScript: 'Variable["CheckedRack4"] = true;
+
+        SetQuestEntryState("Leave
+        Store", 3, "success")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 106
+        y: 107
         width: 160
         height: 30
     - id: 3
@@ -7334,7 +8050,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 15
@@ -7354,6 +8070,74 @@ MonoBehaviour:
         serializedVersion: 2
         x: 411
         y: 105
+        width: 160
+        height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I think I've checked everywhere.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 15
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: CurrentQuestEntryState("Leave Store", 2) == "success" and
+        (CurrentQuestEntryState("Leave Store", 3) == "success") and (CurrentQuestEntryState("Leave
+        Store", 4) == "success") and (CurrentQuestEntryState("Leave Store", 5) ==
+        "success")
+      userScript: SetQuestEntryState("Leave Store", 6, "active")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 215
+        y: 194
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -7514,7 +8298,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 16
@@ -7532,7 +8316,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
+        x: 21
         y: 116
         width: 160
         height: 30
@@ -7579,8 +8363,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/FrightNight_Interaction_Tree);
-          Delay({{end}});
+        value: AudioWait(Audio/Mixed/Clothing Store/Interactable/FrightNight_Interactable_Christmas_Tree_01);
+          Delay({{end}})
         type: 0
         typeString: 
       conversationID: 16
@@ -7604,7 +8388,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 19
+        x: 20
         y: 61
         width: 160
         height: 30
@@ -7766,7 +8550,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 18
@@ -7785,7 +8569,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 33
-        y: 162
+        y: 163
         width: 160
         height: 30
     - id: 2
@@ -7831,7 +8615,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 18
@@ -8023,7 +8807,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 19
@@ -8094,7 +8878,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 19
@@ -8159,7 +8943,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 19
@@ -8224,7 +9008,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 19
@@ -8250,6 +9034,1699 @@ MonoBehaviour:
         serializedVersion: 2
         x: 92
         y: 82
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 20
+    fields:
+    - title: Title
+      value: Changing Room C
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: -1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 20
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 20
+        originDialogueID: 0
+        destinationConversationID: 20
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: The room is empty
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 20
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 79
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 21
+    fields:
+    - title: Title
+      value: Changing Room D
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: -1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 21
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 21
+        originDialogueID: 0
+        destinationConversationID: 21
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      - originConversationID: 21
+        originDialogueID: 0
+        destinationConversationID: 21
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: You see a huge mound of clothes on the floor.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 21
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 21
+        originDialogueID: 1
+        destinationConversationID: 21
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 18
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I know I've been here for a few hours, but I just can't choose.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 21
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 21
+        originDialogueID: 2
+        destinationConversationID: 21
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 21
+        y: 130
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 18
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Red with white polka dots or white with red polka dots.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 21
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: Variable["Polkadots"] = true
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 180
+        width: 160
+        height: 30
+    - id: 4
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Ok, red...no wait white.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 21
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["Polkadots"] == true
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 278
+        y: 84
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 22
+    fields:
+    - title: Title
+      value: ChangingRoom
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: -1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 22
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 22
+        originDialogueID: 0
+        destinationConversationID: 22
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      - originConversationID: 22
+        originDialogueID: 0
+        destinationConversationID: 22
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      - originConversationID: 22
+        originDialogueID: 0
+        destinationConversationID: 22
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 222
+        y: 41
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Just an empty room
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});)
+        type: 0
+        typeString: 
+      conversationID: 22
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: CurrentQuestState("Leave Store") == "unassigned"
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 103.0695
+        y: 141.44833
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Nothing here
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 22
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["CheckedChangingRoom"] == true
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 298
+        y: 146
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: She's not here either.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 22
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 22
+        originDialogueID: 3
+        destinationConversationID: 22
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active"
+      userScript: 'Variable["CheckedChangingRoom"] = true;
+
+        SetQuestEntryState("Leave
+        Store", 4, "success")'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 486
+        y: 153
+        width: 160
+        height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I think I've checked everywhere.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 22
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: CurrentQuestEntryState("Leave Store", 2) == "success" and
+        (CurrentQuestEntryState("Leave Store", 3) == "success") and (CurrentQuestEntryState("Leave
+        Store", 4) == "success") and (CurrentQuestEntryState("Leave Store", 5) ==
+        "success")
+      userScript: SetQuestEntryState("Leave Store", 6, "active")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 490
+        y: 219
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 25.862015, y: 34.913734}
+    canvasZoom: 0.64000034
+  - id: 23
+    fields:
+    - title: Title
+      value: Nice Grandma
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 23
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 23
+        originDialogueID: 0
+        destinationConversationID: 23
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 19
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Oh, I sure do hope that Tiffany and James like these socks I bought
+          them
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 23
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 24
+    fields:
+    - title: Title
+      value: Festive Shelves
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 24
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 24
+        originDialogueID: 0
+        destinationConversationID: 24
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Festive and colorful sweaters laid in stacks.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 24
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 25
+    fields:
+    - title: Title
+      value: Men's Clothing
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 25
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 25
+        originDialogueID: 0
+        destinationConversationID: 25
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Nothing but blue jeans and jean jackets.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        type: 0
+        typeString: 
+      conversationID: 25
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 26
+    fields:
+    - title: Title
+      value: Women's Clothing
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+      type: 0
+      typeString: 
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: -1
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 26
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 26
+        originDialogueID: 0
+        destinationConversationID: 26
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Blouses and  turtlenecks line the rack.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 26
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Background
   - Prop
+  - Exit
+  - Enemy
+  - GameOver
   layers:
   - Default
   - TransparentFX

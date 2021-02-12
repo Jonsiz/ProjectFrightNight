@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,10 +8,7 @@ public class PlayerHide : MonoBehaviour
     private bool hiding = false;
     public bool Hiding
     {
-        get
-        {
-            return hiding;
-        }
+        get { return hiding; }
     }
     private float originalXpos;
     private float originalYpos;
@@ -26,7 +24,8 @@ public class PlayerHide : MonoBehaviour
     private BoxCollider2D bC2D;
     private BoxCollider2D collidingWith;
     private PlayerController pC;
-
+    [SerializeField]
+    private GameObject instructionText;
 
     void Awake()
     {
@@ -36,7 +35,6 @@ public class PlayerHide : MonoBehaviour
         pC = GetComponent<PlayerController>();
         rBD2D.useFullKinematicContacts = true;
         colliding = false;
-
     }
 
     void FixedUpdate()
@@ -78,7 +76,7 @@ public class PlayerHide : MonoBehaviour
             {
                 if (Input.GetKeyDown("space"))
                 {
-
+                    instructionText.SetActive(false);
                     if (collidingWith.gameObject.tag == "Prop")
                     {
                         if (hiding)
@@ -142,5 +140,16 @@ public class PlayerHide : MonoBehaviour
     {
         colliding = false;
         //Debug.Log("exit");
+    }
+
+    void SetHiding(string prop)
+    {
+        hiding = true;
+        var Prop = GameObject.Find(prop);
+        newXpos = Prop.gameObject.transform.position.x;
+        newYpos = Prop.gameObject.transform.position.y + 0.01f;
+        originalXpos = Prop.gameObject.transform.position.x+4;
+        originalYpos = Prop.gameObject.transform.position.y;
+        collidingWith = Prop.gameObject.GetComponent<BoxCollider2D>();
     }
 }

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chris_Main_Menu.unity
     guid: b996af8b913e8a541893721e8c805603
   - enabled: 1
+    path: Assets/Scenes/IntroAnimationSetup.unity.unity
+    guid: 6a473a747e476984eb1ffb13fa955941
+  - enabled: 1
     path: Assets/Scenes/ClothingStore.unity
     guid: eab9e6f46bc87a74b8babaf6a938b14b
   m_configObjects: {}

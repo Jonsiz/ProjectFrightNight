@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -25,6 +26,14 @@ public class EnemyAI : MonoBehaviour
     private bool avoiding;
     [SerializeField]
     private float sightRadius = 10;
+    private NodePath nodePath;
+    [SerializeField]
+    private bool active;
+    private float xSpeed;
+    private float ySpeed;
+    private float prevX;
+    private float prevY;
+    private Animator enemyAnimator;
 
     void Awake()
     {
@@ -33,46 +42,66 @@ public class EnemyAI : MonoBehaviour
         rBD2D = GetComponent<Rigidbody2D>();
         //targetVector = target.position;
         avoiding = false;
+        nodePath = GetComponent<NodePath>();
+        prevX = transform.position.x;
+        prevY = transform.position.y;
+        enemyAnimator = GetComponent<Animator>();
     }
     void FixedUpdate()
     {
-        //Sets up the distance moved this frame.
-        float step = runSpeed * Time.deltaTime;
-
-        //Casts a ray towards the player.
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, ((Vector2)target.position - (Vector2)transform.position),sightRadius);
-        //Draws a ray towards the position the enemy is moving towards
-        Debug.DrawRay(transform.position, (targetVector - (Vector2)transform.position), Color.red);
-        //If the cast ray hits the player, the position the enemy is moving towards updates.
-        if (hit && hit.collider.gameObject.tag == "Player")
+        if (active)
         {
+            //Sets up the distance moved this frame.
+            float step = runSpeed * Time.deltaTime;
+
+            //Casts a ray towards the player.
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, ((Vector2)target.position - (Vector2)transform.position), sightRadius);
+            //Draws a ray towards the position the enemy is moving towards
+            Debug.DrawRay(transform.position, (targetVector - (Vector2)transform.position), Color.red);
+            //If the cast ray hits the player, the position the enemy is moving towards updates.
+            if (hit && hit.collider.gameObject.tag == "Player")
+            {
                 PlayerHide playerHide = hit.collider.gameObject.GetComponent<PlayerHide>();
                 if (!playerHide.Hiding)
                 {
+                    nodePath.Pathing = false;
                     step = runSpeed * Time.deltaTime;
                     targetVector = target.position;
                 }
-        }
-        else
-        {
-            //step = walkSpeed * Time.deltaTime;
-            targetVector = transform.position;
+            }
+            else
+            {
+                //step = walkSpeed * Time.deltaTime;
+                targetVector = transform.position;
+                nodePath.Pathing = true;
+            }
+            horizontalDirection = Mathf.Sign(targetVector.x - transform.position.x);
+            verticalDirection = Mathf.Sign(targetVector.y - transform.position.y);
+
+            //Moves the enemy towards the targeted position.
+            if (!avoiding)
+            {
+                rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step));
+            }
+            else
+            {
+                rBD2D.MovePosition((Vector2)transform.position + additionalVelocity);
+            }
+
+            additionalVelocity = new Vector2(0, 0);
         }
 
-        horizontalDirection = Mathf.Sign(targetVector.x - transform.position.x);
-        verticalDirection = Mathf.Sign(targetVector.y - transform.position.y);
+        xSpeed = transform.position.x - prevX;
+        ySpeed = transform.position.y - prevY;
 
-        //Moves the enemy towards the targeted position.
-        if (!avoiding)
-        {
-            rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step));
-        }
-        else
-        {
-            rBD2D.MovePosition((Vector2)transform.position + additionalVelocity);
-        }
+        prevX = transform.position.x;
+        prevY = transform.position.y;
 
-        additionalVelocity = new Vector2(0,0);
+        Vector2 magnitude = new Vector2(xSpeed, ySpeed);
+
+        enemyAnimator.SetFloat("HorizontalMovement", xSpeed);
+        enemyAnimator.SetFloat("VerticalMovement", ySpeed);
+        enemyAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
     }
 
     void OnCollisionStay2D(Collision2D other)
@@ -119,5 +148,10 @@ public class EnemyAI : MonoBehaviour
             //Debug.Log("Bumping vertical lines");
             additionalVelocity = transform.right * runSpeed * Time.deltaTime * horizontalDirection;
         }
+    }
+
+    void ActivateEnemy(string boolean)
+    {
+        active = Boolean.Parse(boolean);
     }
 }

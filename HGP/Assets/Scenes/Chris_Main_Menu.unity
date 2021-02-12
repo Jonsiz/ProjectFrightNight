@@ -382,7 +382,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.558
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -479,8 +479,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSource: {fileID: 61849224}
-  buttonClick: {fileID: 8300000, guid: 101f5f2b927dc564d839c2ef4d278214, type: 3}
-  buttonHover: {fileID: 8300000, guid: 101f5f2b927dc564d839c2ef4d278214, type: 3}
+  buttonClick: {fileID: 8300000, guid: 720a43ba2de1db04b83a94b40c88a7de, type: 3}
+  buttonHover: {fileID: 8300000, guid: 720a43ba2de1db04b83a94b40c88a7de, type: 3}
 --- !u!4 &61849226
 Transform:
   m_ObjectHideFlags: 0
@@ -2260,17 +2260,17 @@ PrefabInstance:
     - target: {fileID: 764414572192000965, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: m_Volume
-      value: 0.575
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 5986d2912465ca64d9ab5e16998a1758, type: 3}
+      objectReference: {fileID: 8300000, guid: 11a49734dee6dea47add3d4aa53b3017, type: 3}
     - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: volume
-      value: 0.417
+      value: 0.375
       objectReference: {fileID: 0}
     - target: {fileID: 764414572192000971, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}

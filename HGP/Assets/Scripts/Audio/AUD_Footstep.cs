@@ -39,7 +39,8 @@ public class AUD_Footstep : MonoBehaviour
         if (!source.isPlaying)
         {
             //Selects what audio clip to use.
-            source.clip = step[Random.Range(0, step.Length)];
+            AudioClip step02 = step[Random.Range(0, step.Length)];
+            source.clip = step02;
             //Sets Volume
             Volume = Random.Range(minVolume, maxVolume);
             source.volume = Volume;
@@ -47,7 +48,7 @@ public class AUD_Footstep : MonoBehaviour
             pitch = Random.Range(minPitch, maxPitch);
             source.pitch = pitch;
             //Play
-            source.Play();
+            source.PlayOneShot(source.clip);
         }
     }
 }
