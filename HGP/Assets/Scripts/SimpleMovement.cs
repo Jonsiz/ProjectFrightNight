@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//If I remember/understand this right, someone else made this one to temporarily replace my PlayerController script. I don't remember why, but they needed
+//something else ASAP. It's not on the player character anymore, and it copies some of the code from the other controller script, so
+//ignore this one.
+
 public class SimpleMovement : MonoBehaviour
 {
     private float sprint = 5;
