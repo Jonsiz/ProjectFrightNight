@@ -1002,7 +1002,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -1077,7 +1077,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1148,7 +1148,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1172,7 +1172,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 18
+        x: 19.063828
         y: 209.93619
         width: 160
         height: 30
@@ -1219,7 +1219,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1284,7 +1284,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});;
         type: 0
         typeString: 
       conversationID: 1
@@ -1356,7 +1356,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1427,7 +1427,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1452,7 +1452,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 265.06384
-        y: 187
+        y: 188.06384
         width: 160
         height: 30
     - id: 8
@@ -1498,7 +1498,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1569,7 +1569,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1634,7 +1634,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1705,7 +1705,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1897,7 +1897,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -1921,7 +1921,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 251
+        x: 252.36987
         y: 211
         width: 160
         height: 30
@@ -1968,7 +1968,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2114,7 +2114,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2185,7 +2185,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2257,7 +2257,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 2
@@ -2328,7 +2328,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2399,7 +2399,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2470,7 +2470,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2541,7 +2541,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2606,7 +2606,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2678,7 +2678,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2703,7 +2703,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 460
-        y: 489.02808
+        y: 490.39795
         width: 160
         height: 30
     - id: 29
@@ -2833,7 +2833,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: SwitchCamera(Cutaway 1_2);Delay(2.5);AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SwitchCamera(Cutaway 1_2);Delay(2.5);SendMessage(Play, Dialogue_PopUp,
+          AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2904,7 +2905,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3040,7 +3041,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3062,8 +3063,8 @@ MonoBehaviour:
         y: 329.56326
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 20.547928}
-    canvasZoom: 0.7300005
+    canvasScrollPosition: {x: 35.82086, y: 110.44769}
+    canvasZoom: 0.67000055
   - id: 3
     fields:
     - title: Title
@@ -3304,7 +3305,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3328,7 +3329,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 46
+        x: 47.063843
         y: 279
         width: 160
         height: 30
@@ -3375,7 +3376,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3408,7 +3409,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 46
+        x: 47.063828
         y: 329
         width: 160
         height: 30
@@ -3455,7 +3456,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3593,7 +3594,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});;
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3664,7 +3665,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
+        value: 
         type: 0
         typeString: 
       conversationID: 3
@@ -3686,7 +3691,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 544
-        y: 251
+        y: 253.12766
         width: 160
         height: 30
     - id: 8
@@ -3732,7 +3737,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3760,7 +3765,7 @@ MonoBehaviour:
         y: 150
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 65.95746}
+    canvasScrollPosition: {x: 0, y: 48.936188}
     canvasZoom: 0.94000006
   - id: 4
     fields:
@@ -3918,7 +3923,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 4
@@ -3942,8 +3947,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 80
+        x: 22
+        y: 82
         width: 160
         height: 30
     - id: 2
@@ -3989,7 +3994,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 4
@@ -4013,8 +4018,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 130
+        x: 21
+        y: 132
         width: 160
         height: 30
     - id: 3
@@ -4060,7 +4065,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 4
@@ -4240,7 +4245,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -4311,7 +4316,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -4330,7 +4335,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 25
-        y: 217
+        y: 217.91742
         width: 160
         height: 30
     - id: 3
@@ -4376,7 +4381,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -4568,7 +4573,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4592,7 +4597,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 69.51456
+        x: 70.691025
         y: 177.08737
         width: 160
         height: 30
@@ -4639,7 +4644,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4663,7 +4668,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 69.51456
+        x: 70.691025
         y: 227.08737
         width: 160
         height: 30
@@ -4710,7 +4715,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4775,7 +4780,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4793,7 +4798,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 328.73785
+        x: 329.9143
         y: 49.137604
         width: 160
         height: 30
@@ -4840,7 +4845,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -5026,7 +5031,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 7
@@ -5044,7 +5049,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 37
+        x: 39.06186
         y: 142.96907
         width: 160
         height: 30
@@ -5206,7 +5211,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -5231,7 +5236,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 55
-        y: 199
+        y: 200
         width: 160
         height: 30
     - id: 2
@@ -5277,7 +5282,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -5348,7 +5353,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -5367,7 +5372,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 55
-        y: 301
+        y: 302
         width: 160
         height: 30
     - id: 4
@@ -5413,7 +5418,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -5611,7 +5616,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5682,7 +5687,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5750,7 +5755,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5821,7 +5826,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5889,7 +5894,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5955,7 +5960,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5974,7 +5979,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 799
+        x: 800.2195
         y: 148
         width: 160
         height: 30
@@ -6021,7 +6026,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -6056,11 +6061,11 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 189.90244
-        y: 114.65854
+        y: 115.65854
         width: 160
         height: 30
-    canvasScrollPosition: {x: 36.99997, y: 17}
-    canvasZoom: 1.0000001
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.8200003
   - id: 10
     fields:
     - title: Title
@@ -6217,7 +6222,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 10
@@ -6235,7 +6240,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 39
+        x: 40
         y: 120
         width: 160
         height: 30
@@ -6397,7 +6402,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -6468,7 +6473,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -6533,7 +6538,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -6737,7 +6742,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -6765,8 +6770,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 452.51428
-        y: 143.57144
+        x: 453.65063
+        y: 145.80672
         width: 160
         height: 30
     - id: 2
@@ -6812,7 +6817,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -6877,7 +6882,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -6942,7 +6947,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -7013,7 +7018,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -7099,12 +7104,15 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
+
+
         x: 643
         y: 197
         width: 160
         height: 30
     canvasScrollPosition: {x: 22.330063, y: 23.300964}
     canvasZoom: 1.03
+    
   - id: 13
     fields:
     - title: Title
@@ -7273,7 +7281,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 13
@@ -7338,7 +7346,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});;
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 13
@@ -7413,7 +7421,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 13
@@ -7431,7 +7439,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 449
+        x: 450
         y: 130
         width: 160
         height: 30
@@ -7478,7 +7486,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 13
@@ -7499,8 +7507,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 261
-        y: 234
+        x: 262
+        y: 235
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -7995,7 +8003,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 15
@@ -8013,7 +8021,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
+        x: 21
         y: 105
         width: 160
         height: 30
@@ -8060,7 +8068,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 15
@@ -8089,7 +8097,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 107
+        y: 108
         width: 160
         height: 30
     - id: 3
@@ -8135,7 +8143,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 15
@@ -8200,7 +8208,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 15
@@ -8383,7 +8391,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 16
@@ -8402,7 +8410,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 21
-        y: 116
+        y: 118
         width: 160
         height: 30
     - id: 2
@@ -8448,8 +8456,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Clothing Store/Interactable/FrightNight_Interactable_Christmas_Tree_01);
-          Delay({{end}})
+        value: SendMessage(Play, CS_Dialogue_Tree, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 16
@@ -8474,7 +8481,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 61
+        y: 63
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -8635,7 +8642,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 18
@@ -8654,7 +8661,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 33
-        y: 163
+        y: 166
         width: 160
         height: 30
     - id: 2
@@ -8700,7 +8707,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 18
@@ -8892,7 +8899,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 19
@@ -8963,7 +8970,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 19
@@ -9028,7 +9035,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 19
@@ -9093,7 +9100,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 19
@@ -9279,7 +9286,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 20
@@ -9465,7 +9472,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 21
@@ -9489,7 +9496,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
+        x: 21
         y: 80
         width: 160
         height: 30
@@ -9536,7 +9543,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 21
@@ -9607,7 +9614,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 21
@@ -9672,7 +9679,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 21
@@ -9864,7 +9871,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});)
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 22
@@ -9929,7 +9936,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 22
@@ -9994,7 +10001,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 22
@@ -10068,7 +10075,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_Select, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 22
@@ -10090,7 +10097,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 490
-        y: 219
+        y: 220.5625
         width: 160
         height: 30
     canvasScrollPosition: {x: 25.862015, y: 34.913734}
@@ -10252,7 +10259,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 23
@@ -10432,7 +10439,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 24
@@ -10612,7 +10619,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 25
@@ -10631,7 +10638,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 80
+        y: 81
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -10792,7 +10799,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: SendMessage(Play, Dialogue_PopUp, AudioManager); Delay({{end}});
         type: 0
         typeString: 
       conversationID: 26
