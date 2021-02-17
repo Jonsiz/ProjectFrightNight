@@ -95,7 +95,6 @@ public class PlayerHide : MonoBehaviour
 
                         if (hiding)
                         {
-                            FindObjectOfType<AudioManager>().Play("CS_Hide_Out");
                             hiding = false;
                             leavingHiding = true;
                         }
@@ -105,9 +104,7 @@ public class PlayerHide : MonoBehaviour
                         //must have been a reason for it.
                         else
                         {
-
-                            FindObjectOfType<AudioManager>().Play("CS_Hide_In");
-
+                            FindObjectOfType<AudioManager>().Play("CS_ClothingRack_Hide");
                             hiding = true;
                             pC.Hidden = true;
                             newXpos = collidingWith.gameObject.transform.position.x;
