@@ -72315,8 +72315,8 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
-  - name: Dialogue Select
-    clip: {fileID: 8300000, guid: ce4a8ae47db88ef4c971ee8e6aea1e55, type: 3}
+  - name: Dialogue_Select
+    clip: {fileID: 8300000, guid: 3599bb0a40c426a47b23d1653704e5f8, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
@@ -72345,6 +72345,18 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+  - name: CS_Hide_In
+    clip: {fileID: 8300000, guid: b770a0daf25350c49b9b7434dc11d883, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: CS_Hide_Out
+    clip: {fileID: 8300000, guid: 3760dd95859e39a4fb0a999826305a51, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
 --- !u!4 &688524479
 Transform:
   m_ObjectHideFlags: 0

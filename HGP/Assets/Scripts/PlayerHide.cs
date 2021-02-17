@@ -81,11 +81,13 @@ public class PlayerHide : MonoBehaviour
                     {
                         if (hiding)
                         {
+                            FindObjectOfType<AudioManager>().Play("CS_Hide_Out");
                             hiding = false;
                             leavingHiding = true;
                         }
                         else
                         {
+                            FindObjectOfType<AudioManager>().Play("CS_Hide_In");
                             hiding = true;
                             pC.Hidden = true;
                             newXpos = collidingWith.gameObject.transform.position.x;
