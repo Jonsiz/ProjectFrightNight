@@ -1,0 +1,3740 @@
+fileFormatVersion: 2
+guid: ac1e07b5fdd9ff64c97f00f2dfe0d2b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3119479858706267920
+    second: Walls-for-toy-store_0
+  - first:
+      213: -8248694588106818788
+    second: Walls-for-toy-store_1
+  - first:
+      213: 2656989070828157751
+    second: Walls-for-toy-store_2
+  - first:
+      213: 8773050395011487645
+    second: Walls-for-toy-store_3
+  - first:
+      213: -1029500643935662379
+    second: Walls-for-toy-store_4
+  - first:
+      213: 7000390988025749345
+    second: Walls-for-toy-store_5
+  - first:
+      213: -3878007896005785265
+    second: Walls-for-toy-store_6
+  - first:
+      213: -5733210109842758717
+    second: Walls-for-toy-store_7
+  - first:
+      213: -86992337514155120
+    second: Walls-for-toy-store_8
+  - first:
+      213: 2534157122113669217
+    second: Walls-for-toy-store_9
+  - first:
+      213: 4288649864966176663
+    second: Walls-for-toy-store_10
+  - first:
+      213: -7812654436295418734
+    second: Walls-for-toy-store_11
+  - first:
+      213: -3959794536517793222
+    second: Walls-for-toy-store_12
+  - first:
+      213: -1823736078071261466
+    second: Walls-for-toy-store_13
+  - first:
+      213: -1169098844385176055
+    second: Walls-for-toy-store_14
+  - first:
+      213: 3819766516442332771
+    second: Walls-for-toy-store_15
+  - first:
+      213: 650845267546393874
+    second: Walls-for-toy-store_16
+  - first:
+      213: 5433992014260821517
+    second: Walls-for-toy-store_17
+  - first:
+      213: 4525106962411618906
+    second: Walls-for-toy-store_18
+  - first:
+      213: -1242412184384011976
+    second: Walls-for-toy-store_19
+  - first:
+      213: 3307574196854671000
+    second: Walls-for-toy-store_20
+  - first:
+      213: -9129794417421402382
+    second: Walls-for-toy-store_21
+  - first:
+      213: 4889988418031865286
+    second: Walls-for-toy-store_22
+  - first:
+      213: 9192477667271804928
+    second: Walls-for-toy-store_23
+  - first:
+      213: -4376257397986412257
+    second: Walls-for-toy-store_24
+  - first:
+      213: -5985084854284338263
+    second: Walls-for-toy-store_25
+  - first:
+      213: -2204703625295888659
+    second: Walls-for-toy-store_26
+  - first:
+      213: -1485001611788788390
+    second: Walls-for-toy-store_27
+  - first:
+      213: 1293724670033695154
+    second: Walls-for-toy-store_28
+  - first:
+      213: 426798334986516369
+    second: Walls-for-toy-store_29
+  - first:
+      213: -876628324455066148
+    second: Walls-for-toy-store_30
+  - first:
+      213: -1331972894136362535
+    second: Walls-for-toy-store_31
+  - first:
+      213: -1106408436196332166
+    second: Walls-for-toy-store_32
+  - first:
+      213: -1523765734466464007
+    second: Walls-for-toy-store_33
+  - first:
+      213: -3749090359661076019
+    second: Walls-for-toy-store_34
+  - first:
+      213: -819693165299495788
+    second: Walls-for-toy-store_35
+  - first:
+      213: 8561436868009477891
+    second: Walls-for-toy-store_36
+  - first:
+      213: 3653497880282152165
+    second: Walls-for-toy-store_37
+  - first:
+      213: 8004909117994193495
+    second: Walls-for-toy-store_38
+  - first:
+      213: -2908672875044931031
+    second: Walls-for-toy-store_39
+  - first:
+      213: 1353843282977525184
+    second: Walls-for-toy-store_40
+  - first:
+      213: 859933107681674158
+    second: Walls-for-toy-store_41
+  - first:
+      213: 5646720408311288338
+    second: Walls-for-toy-store_42
+  - first:
+      213: 7208103278282756563
+    second: Walls-for-toy-store_43
+  - first:
+      213: -1486995111614133883
+    second: Walls-for-toy-store_44
+  - first:
+      213: -7360781408487865696
+    second: Walls-for-toy-store_45
+  - first:
+      213: -5438802363865695505
+    second: Walls-for-toy-store_46
+  - first:
+      213: 4263256137513035456
+    second: Walls-for-toy-store_47
+  - first:
+      213: -985828215920283499
+    second: Walls-for-toy-store_48
+  - first:
+      213: 9023200594022520390
+    second: Walls-for-toy-store_49
+  - first:
+      213: 3573124872595388410
+    second: Walls-for-toy-store_50
+  - first:
+      213: -9053910744032154940
+    second: Walls-for-toy-store_51
+  - first:
+      213: -66398370846721194
+    second: Walls-for-toy-store_52
+  - first:
+      213: 1111531431697142952
+    second: Walls-for-toy-store_53
+  - first:
+      213: -3882466501796878279
+    second: Walls-for-toy-store_54
+  - first:
+      213: -7858376691477993092
+    second: Walls-for-toy-store_55
+  - first:
+      213: 5002726242006532384
+    second: Walls-for-toy-store_56
+  - first:
+      213: 3577323391651233676
+    second: Walls-for-toy-store_57
+  - first:
+      213: 7799636728213716941
+    second: Walls-for-toy-store_58
+  - first:
+      213: -4037515818625492439
+    second: Walls-for-toy-store_59
+  - first:
+      213: -7184513947297592622
+    second: Walls-for-toy-store_60
+  - first:
+      213: -1253597645117979079
+    second: Walls-for-toy-store_61
+  - first:
+      213: -3656071146800865503
+    second: Walls-for-toy-store_62
+  - first:
+      213: 6284053422963619882
+    second: Walls-for-toy-store_63
+  - first:
+      213: 7626686032450011565
+    second: Walls-for-toy-store_64
+  - first:
+      213: 5532435925941950920
+    second: Walls-for-toy-store_65
+  - first:
+      213: -3270394485376756656
+    second: Walls-for-toy-store_66
+  - first:
+      213: -6506394083951330227
+    second: Walls-for-toy-store_67
+  - first:
+      213: -105744016284641455
+    second: Walls-for-toy-store_68
+  - first:
+      213: 3405172728561398740
+    second: Walls-for-toy-store_69
+  - first:
+      213: 661929770459184951
+    second: Walls-for-toy-store_70
+  - first:
+      213: 8865284228576301445
+    second: Walls-for-toy-store_71
+  - first:
+      213: 6126164738777389878
+    second: Walls-for-toy-store_72
+  - first:
+      213: 64156887985518731
+    second: Walls-for-toy-store_73
+  - first:
+      213: 8897529437520421604
+    second: Walls-for-toy-store_74
+  - first:
+      213: 267067187979229529
+    second: Walls-for-toy-store_75
+  - first:
+      213: -496695085331912881
+    second: Walls-for-toy-store_76
+  - first:
+      213: -2907473962912709000
+    second: Walls-for-toy-store_77
+  - first:
+      213: 8342182641502193808
+    second: Walls-for-toy-store_78
+  - first:
+      213: 277510575556510698
+    second: Walls-for-toy-store_79
+  - first:
+      213: 4689430415746360753
+    second: Walls-for-toy-store_80
+  - first:
+      213: 3674838619914268380
+    second: Walls-for-toy-store_81
+  - first:
+      213: -6549680475429852478
+    second: Walls-for-toy-store_82
+  - first:
+      213: 9019908377229419926
+    second: Walls-for-toy-store_83
+  - first:
+      213: -3802819208961363035
+    second: Walls-for-toy-store_84
+  - first:
+      213: -8185876776529594068
+    second: Walls-for-toy-store_85
+  - first:
+      213: 5670899901543386076
+    second: Walls-for-toy-store_86
+  - first:
+      213: 7592615051405482027
+    second: Walls-for-toy-store_87
+  - first:
+      213: -1588901193245893323
+    second: Walls-for-toy-store_88
+  - first:
+      213: 5037912346284553583
+    second: Walls-for-toy-store_89
+  - first:
+      213: 6620898674662626046
+    second: Walls-for-toy-store_90
+  - first:
+      213: 5008524228666482799
+    second: Walls-for-toy-store_91
+  - first:
+      213: 8244625237273326090
+    second: Walls-for-toy-store_92
+  - first:
+      213: -3529191496636076985
+    second: Walls-for-toy-store_93
+  - first:
+      213: -554869821338451820
+    second: Walls-for-toy-store_94
+  - first:
+      213: 7658711783874732152
+    second: Walls-for-toy-store_95
+  - first:
+      213: -88984982837896438
+    second: Walls-for-toy-store_96
+  - first:
+      213: 3610465781843080440
+    second: Walls-for-toy-store_97
+  - first:
+      213: -2231692201828505152
+    second: Walls-for-toy-store_98
+  - first:
+      213: 494375629115826735
+    second: Walls-for-toy-store_99
+  - first:
+      213: 6700459212256643758
+    second: Walls-for-toy-store_100
+  - first:
+      213: -4155591562904565196
+    second: Walls-for-toy-store_101
+  - first:
+      213: -7196881377334757050
+    second: Walls-for-toy-store_102
+  - first:
+      213: 9017950015914423405
+    second: Walls-for-toy-store_103
+  - first:
+      213: 6018590251680129303
+    second: Walls-for-toy-store_104
+  - first:
+      213: -3183939389279685353
+    second: Walls-for-toy-store_105
+  - first:
+      213: 8970647190344878340
+    second: Walls-for-toy-store_106
+  - first:
+      213: 3543042098176054259
+    second: Walls-for-toy-store_107
+  - first:
+      213: -5678865630992289404
+    second: Walls-for-toy-store_108
+  - first:
+      213: 475887228138234900
+    second: Walls-for-toy-store_109
+  - first:
+      213: 1726186573400958074
+    second: Walls-for-toy-store_110
+  - first:
+      213: 7007090429631533184
+    second: Walls-for-toy-store_111
+  - first:
+      213: -6223125384961076289
+    second: Walls-for-toy-store_112
+  - first:
+      213: -6416772747173352886
+    second: Walls-for-toy-store_113
+  - first:
+      213: -569779921373441996
+    second: Walls-for-toy-store_114
+  - first:
+      213: 114269762536706708
+    second: Walls-for-toy-store_115
+  - first:
+      213: -4137753154564076033
+    second: Walls-for-toy-store_116
+  - first:
+      213: 8411968033812147531
+    second: Walls-for-toy-store_117
+  - first:
+      213: 7235513742873533936
+    second: Walls-for-toy-store_118
+  - first:
+      213: 4855758272568919090
+    second: Walls-for-toy-store_119
+  - first:
+      213: 7800706138232067818
+    second: Walls-for-toy-store_120
+  - first:
+      213: -6903196462920310146
+    second: Walls-for-toy-store_121
+  - first:
+      213: -6791891507390245525
+    second: Walls-for-toy-store_122
+  - first:
+      213: 758314431001398134
+    second: Walls-for-toy-store_123
+  - first:
+      213: 4340055696609603168
+    second: Walls-for-toy-store_124
+  - first:
+      213: 3918519428469361974
+    second: Walls-for-toy-store_125
+  - first:
+      213: 6157645533961896382
+    second: Walls-for-toy-store_126
+  - first:
+      213: 842419787854190966
+    second: Walls-for-toy-store_127
+  - first:
+      213: 8073537481363280577
+    second: Walls-for-toy-store_128
+  - first:
+      213: -653078596728004741
+    second: Walls-for-toy-store_129
+  - first:
+      213: -6849782819978981284
+    second: Walls-for-toy-store_130
+  - first:
+      213: 3839577766912130578
+    second: Walls-for-toy-store_131
+  - first:
+      213: 6633922946943675398
+    second: Walls-for-toy-store_132
+  - first:
+      213: 892741070495120982
+    second: Walls-for-toy-store_133
+  - first:
+      213: 4305046220058520539
+    second: Walls-for-toy-store_134
+  - first:
+      213: 2674431205803579454
+    second: Walls-for-toy-store_135
+  - first:
+      213: 4124146753847428209
+    second: Walls-for-toy-store_136
+  - first:
+      213: -707256908045709023
+    second: Walls-for-toy-store_137
+  - first:
+      213: 1027525681025347144
+    second: Walls-for-toy-store_138
+  - first:
+      213: 5835698450014165670
+    second: Walls-for-toy-store_139
+  - first:
+      213: -3331600925452686105
+    second: Walls-for-toy-store_140
+  - first:
+      213: -1492203538949932205
+    second: Walls-for-toy-store_141
+  - first:
+      213: -6823057649817674271
+    second: Walls-for-toy-store_142
+  - first:
+      213: -8137883146478646835
+    second: Walls-for-toy-store_143
+  - first:
+      213: -1119986661081044113
+    second: Walls-for-toy-store_144
+  - first:
+      213: -6478513674155662179
+    second: Walls-for-toy-store_145
+  - first:
+      213: -7173332917823505244
+    second: Walls-for-toy-store_146
+  - first:
+      213: 2640948502996203287
+    second: Walls-for-toy-store_147
+  - first:
+      213: 5556576664153315846
+    second: Walls-for-toy-store_148
+  - first:
+      213: 1189023879541666108
+    second: Walls-for-toy-store_149
+  - first:
+      213: -4460421844397866609
+    second: Walls-for-toy-store_150
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 108
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walls-for-toy-store_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f3c2e576e9a4b20800000000000000
+      internalID: 3119479858706267920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bb43fb9ffb68d80800000000000000
+      internalID: -8248694588106818788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bbeca8b758fd420800000000000000
+      internalID: 2656989070828157751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9792474ad220c970800000000000000
+      internalID: 8773050395011487645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5decd2e6e9a76b1f0800000000000000
+      internalID: -1029500643935662379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fde129382662160800000000000000
+      internalID: 7000390988025749345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f494a6a7d5c8e2ac0800000000000000
+      internalID: -3878007896005785265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_7
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3e42ce7cb8f60b0800000000000000
+      internalID: -5733210109842758717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_8
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093b9401ee0facef0800000000000000
+      internalID: -86992337514155120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_9
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1688c9cd9722b2320800000000000000
+      internalID: 2534157122113669217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_10
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ff5577458548b30800000000000000
+      internalID: 4288649864966176663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_11
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c5bb3fe20e39390800000000000000
+      internalID: -7812654436295418734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_12
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 3042
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a035359dbfb09c0800000000000000
+      internalID: -3959794536517793222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e69f7613b9c0b6e0800000000000000
+      internalID: -1823736078071261466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_14
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9061a119bc686cfe0800000000000000
+      internalID: -1169098844385176055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ef971a869820530800000000000000
+      internalID: 3819766516442332771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_16
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dc8df8254480900800000000000000
+      internalID: 650845267546393874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_17
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e535a42fa696b40800000000000000
+      internalID: 5433992014260821517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_18
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a520139aec86cce30800000000000000
+      internalID: 4525106962411618906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_19
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8318c2d63b012cee0800000000000000
+      internalID: -1242412184384011976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_20
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89645cf253dd6ed20800000000000000
+      internalID: 3307574196854671000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_21
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2feb04d59547c4180800000000000000
+      internalID: -9129794417421402382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_22
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd4094de8abcd340800000000000000
+      internalID: 4889988418031865286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_23
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008827b0cbd329f70800000000000000
+      internalID: 9192477667271804928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_24
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19385b35196443c0800000000000000
+      internalID: -4376257397986412257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_25
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2934
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abbfcd0905b0fca0800000000000000
+      internalID: -5985084854284338263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deef83bdbb15761e0800000000000000
+      internalID: -2204703625295888659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_27
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d5276e6e6346be0800000000000000
+      internalID: -1485001611788788390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b19482abbb34f110800000000000000
+      internalID: 1293724670033695154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_29
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197799b03da4ce500800000000000000
+      internalID: 426798334986516369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_30
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd55fc8fe2795d3f0800000000000000
+      internalID: -876628324455066148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_31
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d99d8ab5b1e38de0800000000000000
+      internalID: -1331972894136362535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_32
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7da508a36f35a0f0800000000000000
+      internalID: -1106408436196332166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_33
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6d634432f7adae0800000000000000
+      internalID: -1523765734466464007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_34
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc16f817e2e88fbc0800000000000000
+      internalID: -3749090359661076019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_35
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c0289b86ddf94f0800000000000000
+      internalID: -819693165299495788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_36
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30743a4987550d670800000000000000
+      internalID: 8561436868009477891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_37
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec3cdd07f4d3b230800000000000000
+      internalID: 3653497880282152165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_38
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2826
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75254555e66271f60800000000000000
+      internalID: 8004909117994193495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92af1235e6152a7d0800000000000000
+      internalID: -2908672875044931031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_40
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd8c6bfa41d9c210800000000000000
+      internalID: 1353843282977525184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_41
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3c6f5fa981feb00800000000000000
+      internalID: 859933107681674158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_42
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212d7533b4e2d5e40800000000000000
+      internalID: 5646720408311288338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_43
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d15f5ecdb3580460800000000000000
+      internalID: 7208103278282756563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_44
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5894f7d03d12d5be0800000000000000
+      internalID: -1486995111614133883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_45
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a208cdde4049d990800000000000000
+      internalID: -7360781408487865696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_46
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feafa3ae01e7584b0800000000000000
+      internalID: -5438802363865695505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_47
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6e7fe8ed02a2b30800000000000000
+      internalID: 4263256137513035456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_48
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590b384f572a152f0800000000000000
+      internalID: -985828215920283499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_49
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6465ecf1229d83d70800000000000000
+      internalID: 9023200594022520390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_50
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af73921f32a469130800000000000000
+      internalID: 3573124872595388410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_51
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2718
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4caeed1e52c0a5280800000000000000
+      internalID: -9053910744032154940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b3404980b141ff0800000000000000
+      internalID: -66398370846721194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_53
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a45dfea2f3fc6f00800000000000000
+      internalID: 1111531431697142952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_54
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9382b0c6945be1ac0800000000000000
+      internalID: -3882466501796878279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_55
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79ae39d80071f290800000000000000
+      internalID: -7858376691477993092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_56
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0210353f2014d6540800000000000000
+      internalID: 5002726242006532384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_57
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f3116dba435a130800000000000000
+      internalID: 3577323391651233676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_58
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfb442b740ed3c60800000000000000
+      internalID: 7799636728213716941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_59
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a9ecf21ccd7f7c0800000000000000
+      internalID: -4037515818625492439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_60
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dacc7f41aa7b4c90800000000000000
+      internalID: -7184513947297592622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_61
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9360a7765935a9ee0800000000000000
+      internalID: -1253597645117979079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_62
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f1165a9a6034dc0800000000000000
+      internalID: -3656071146800865503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_63
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28f2593b41753750800000000000000
+      internalID: 6284053422963619882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_64
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2610
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1cd91e98e67d960800000000000000
+      internalID: 7626686032450011565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9116c992927cc40800000000000000
+      internalID: 5532435925941950920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_66
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054d8b7fa893d92d0800000000000000
+      internalID: -3270394485376756656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_67
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cb0619d05a4b5a0800000000000000
+      internalID: -6506394083951330227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_68
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1571b30a062588ef0800000000000000
+      internalID: -105744016284641455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_69
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3ffb42e8a914f20800000000000000
+      internalID: 3405172728561398740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_70
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fb9728e95af2900800000000000000
+      internalID: 661929770459184951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_71
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581d92d1901d70b70800000000000000
+      internalID: 8865284228576301445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_72
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b99524f52840550800000000000000
+      internalID: 6126164738777389878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_73
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b887546895ee3e000800000000000000
+      internalID: 64156887985518731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_74
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e26cfdd1ef5a7b70800000000000000
+      internalID: 8897529437520421604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_75
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9591aa64130d4b300800000000000000
+      internalID: 267067187979229529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_76
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47eb1593726b19f0800000000000000
+      internalID: -496695085331912881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_77
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2502
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87604eec5d396a7d0800000000000000
+      internalID: -2907473962912709000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0980b26e9e265c370800000000000000
+      internalID: 8342182641502193808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_79
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3c57de56ae9d300800000000000000
+      internalID: 277510575556510698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_80
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b569711e14341140800000000000000
+      internalID: 4689430415746360753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_81
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde60e23146aff230800000000000000
+      internalID: 3674838619914268380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_82
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca21bd2f4cda15a0800000000000000
+      internalID: -6549680475429852478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_83
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695645b21e62d2d70800000000000000
+      internalID: 9019908377229419926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_84
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a373d0e31ca93bc0800000000000000
+      internalID: -3802819208961363035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_85
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2975df317ce56e80800000000000000
+      internalID: -8185876776529594068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_86
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb8a4c2a6513be40800000000000000
+      internalID: 5670899901543386076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_87
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28de4f69236e5960800000000000000
+      internalID: 7592615051405482027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_88
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d526978c613f9e0800000000000000
+      internalID: -1588901193245893323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_89
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6578d146924ae540800000000000000
+      internalID: 5037912346284553583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_90
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2394
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2de1df34822eb50800000000000000
+      internalID: 6620898674662626046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f606a9aef3ad18540800000000000000
+      internalID: 5008524228666482799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_92
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02b5eda8faca6270800000000000000
+      internalID: 8244625237273326090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_93
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c6da2480bc50fc0800000000000000
+      internalID: -3529191496636076985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_94
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490898a56d4bc48f0800000000000000
+      internalID: -554869821338451820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_95
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870a3f23ac5394a60800000000000000
+      internalID: 7658711783874732152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_96
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b5a9b21acd3cef0800000000000000
+      internalID: -88984982837896438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_97
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4b570ef73fa1230800000000000000
+      internalID: 3610465781843080440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_98
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9a00634cf6701e0800000000000000
+      internalID: -2231692201828505152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_99
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f222f0fe3006cd600800000000000000
+      internalID: 494375629115826735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_100
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa0d8a2720dcfc50800000000000000
+      internalID: 6700459212256643758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_101
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a8675ad7f5456c0800000000000000
+      internalID: -4155591562904565196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_102
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649765d948a8f1c90800000000000000
+      internalID: -7196881377334757050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_103
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2286
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64bec4a2c1362d70800000000000000
+      internalID: 9017950015914423405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2178
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711e50032f3568350800000000000000
+      internalID: 6018590251680129303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_105
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2178
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7153c93aeff50d3d0800000000000000
+      internalID: -3183939389279685353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_106
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2178
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409ccd157142e7c70800000000000000
+      internalID: 8970647190344878340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2070
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3d906340a6b2130800000000000000
+      internalID: 3543042098176054259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_108
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2070
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481b789ebcd9031b0800000000000000
+      internalID: -5678865630992289404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_109
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2070
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4142352a9e0ba9600800000000000000
+      internalID: 475887228138234900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1962
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74ec93fa85a4f710800000000000000
+      internalID: 1726186573400958074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_111
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1962
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0801a3fde9f2e3160800000000000000
+      internalID: 7007090429631533184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_112
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1962
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3dda41f6403a9a0800000000000000
+      internalID: -6223125384961076289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_113
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1854
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a23581f2b03f6a0800000000000000
+      internalID: -6416772747173352886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_114
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1854
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430d26a2e2cb718f0800000000000000
+      internalID: -569779921373441996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_115
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1854
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492919c5eb7f59100800000000000000
+      internalID: 114269762536706708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_116
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1746
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdc4fdbd6fb396c0800000000000000
+      internalID: -4137753154564076033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_117
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1746
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d6055bb505db470800000000000000
+      internalID: 8411968033812147531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_118
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1746
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd1f6be965b96460800000000000000
+      internalID: 7235513742873533936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1638
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23482a70c6e136340800000000000000
+      internalID: 4855758272568919090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_120
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1638
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6188e17eca14c60800000000000000
+      internalID: 7800706138232067818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_121
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1638
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72e6e4446be230a0800000000000000
+      internalID: -6903196462920310146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1530
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b651305b8aa5eb1a0800000000000000
+      internalID: -6791891507390245525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_123
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1530
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b04ef05f2168a00800000000000000
+      internalID: 758314431001398134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_124
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1530
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e63d559a9fa3c30800000000000000
+      internalID: 4340055696609603168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d0263b8a0616630800000000000000
+      internalID: 3918519428469361974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_126
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1c1901df9547550800000000000000
+      internalID: 6157645533961896382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_127
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6791fce6550e0bb00800000000000000
+      internalID: 842419787854190966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_128
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2d5795097fa0070800000000000000
+      internalID: 8073537481363280577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_129
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fdd97f97ccfe6f0800000000000000
+      internalID: -653078596728004741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_130
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50549221dea0f0a0800000000000000
+      internalID: -6849782819978981284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_131
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ef844d2abe84530800000000000000
+      internalID: 3839577766912130578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_132
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ce3efa5cd601c50800000000000000
+      internalID: 6633922946943675398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_133
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e734f0647a36c00800000000000000
+      internalID: 892741070495120982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_134
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbe9306ab89ebb30800000000000000
+      internalID: 4305046220058520539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_135
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38542e030d7d1520800000000000000
+      internalID: 2674431205803579454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_136
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17408a83f99eb3930800000000000000
+      internalID: 4124146753847428209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_137
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1422
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1219efed6915f26f0800000000000000
+      internalID: -707256908045709023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_138
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e6b1fa921824e00800000000000000
+      internalID: 1027525681025347144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_139
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa546942d09cf050800000000000000
+      internalID: 5835698450014165670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_140
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eca7012c96c3c1d0800000000000000
+      internalID: -3331600925452686105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_141
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bfe4099c0aa4be0800000000000000
+      internalID: -1492203538949932205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_142
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed1b94b731af41a0800000000000000
+      internalID: -6823057649817674271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_143
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc98086056e601f80800000000000000
+      internalID: -8137883146478646835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_144
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ba611d0120570f0800000000000000
+      internalID: -1119986661081044113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_145
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94e0735322b716a0800000000000000
+      internalID: -6478513674155662179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_146
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac738997b3337c90800000000000000
+      internalID: -7173332917823505244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_147
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717303fcba886a420800000000000000
+      internalID: 2640948502996203287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_148
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a551a390dec1d40800000000000000
+      internalID: 5556576664153315846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_149
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31b9813be2408010800000000000000
+      internalID: 1189023879541666108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls-for-toy-store_150
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1314
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81c54007f56912c0800000000000000
+      internalID: -4460421844397866609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2b856a5267ec5ab4c9c5d5130ac9925b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
