@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
 
+
+//This script's original purpose turned out to not be necessary. I used it to try and interact with variables in the
+//dialogue system prefab, so I'll keep it around for reference.
+
+
+
 public class CameraCutScript : MonoBehaviour
 {
     public GameObject dialogueSystem;

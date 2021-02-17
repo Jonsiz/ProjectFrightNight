@@ -6,6 +6,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 
+//This one handles moving the player around.
+
 public class PlayerController : MonoBehaviour
 {
     private float horizontalInput;
@@ -63,20 +65,26 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Checks if the player is not exhausted
         if (!exhausted)
         {
+            //Checks if the shift key is pressed, if either horizontal or vertical input are not 0, and if the x or y Speed
+            //is not 0. It then increases the player's speed and drains their stamina.
             if (Input.GetKey("left shift") && (horizontalInput != 0 || verticalInput != 0) && (xSpeed != 0 || ySpeed != 0))
             {
                 sprintSpeed = sprint;
                 stamina -= staminaDrain;
+                //If stamina goes below 0, exhausted is set to true.
                 if (stamina < 0)
                 {
                     exhausted = true;
                 }
             }
             else
+            //If one of the above isn't true, the player's speed is normal.
             {
                 sprintSpeed = 1;
+                //Increases stamina if stamina is less than the maximum amount.
                 if (stamina < maxStamina)
                 {
                     stamina += staminaGain;
@@ -88,9 +96,11 @@ public class PlayerController : MonoBehaviour
             }
         }
         else
+        //If the player is exhausted, the player's speed is halfed and they start getting their stamina back.
         {
             sprintSpeed = 0.5f;
             stamina += staminaGain;
+            //This caps it off at the max stamina
             if (stamina >= maxStamina)
             {
                 stamina = maxStamina;
@@ -98,6 +108,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        //Gets the position of the player, changes the x and y values based on input, the player's speed, the sprintspeed variable,
+        //and whether or not the player is hiding. It moves the rigidbody for collision reasons.
         Vector2 position = transform.position;
 
         horizontalInput = Input.GetAxis("Horizontal");
@@ -109,6 +121,9 @@ public class PlayerController : MonoBehaviour
         position.y = position.y + speed * verticalInput * Time.deltaTime * sprintSpeed * hidingStopper;
 
         rBD2D.MovePosition(position);
+
+        //The following code calculates the player's movement for Unity's animator (it is done this way to compensate for cases where
+        //the player is being automatically moved, such as when they're moving to a hiding position.
 
         xSpeed = transform.position.x - prevX;
         ySpeed = transform.position.y - prevY;
