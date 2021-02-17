@@ -5,6 +5,9 @@ using UnityEngine.Video;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//This plays a cutscene. Originally it was one where the player hides, but that's changed now. It was mainly to learn how playing a cutscene
+//works in Unity. This will probably be elaborated on later, but right now it plays in its own scene and then moves to the main one.
+
 public class PlayHidingCutscene : MonoBehaviour
 {
     VideoPlayer videoPlayer;

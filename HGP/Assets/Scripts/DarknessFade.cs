@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//This sets the opacity of a GUI element that fades based on the player's stamina. Ideally. Currently it's not implemented,
+//it will probably be built on later if time permits.
+
 public class DarknessFade : MonoBehaviour
 {
     private Image image;
@@ -22,6 +25,7 @@ public class DarknessFade : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Sets the alpha of the image. See above. Originally it would just fade in or out as an environmental effect.
         color = image.color;
         //if (color.a < fadeGoal)
         //{
