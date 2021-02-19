@@ -9,7 +9,7 @@ public class TestLoad : MonoBehaviour
     {
         if (Input.GetKeyDown("l"))
         {
-            PixelCrushers.SaveSystem.LoadFromSlot(1);
+            GameObject.Find("SaveAndLoadObject").GetComponent<SaveAndLoadManager>().LoadingdaGame();
         }
 
         if (Input.GetKeyDown("k"))
