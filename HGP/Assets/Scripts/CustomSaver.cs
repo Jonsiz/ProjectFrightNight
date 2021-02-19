@@ -19,8 +19,8 @@ namespace PixelCrushers
             /// string. This will use the serializer component on the Save System GameObject,
             /// which defaults to JSON serialization.
             enemyActive = GetComponent<EnemyAI>().Active;
-            serializedEnemyActive = SaveSystem.Serialize(enemyActive);
-            return serializedEnemyActive;
+            //serializedEnemyActive = SaveSystem.Serialize(enemyActive);
+            return enemyActive.ToString();
             //testmessage = GetComponent<EnemyAI>().testLoad;
             //serializedEnemyActive = SaveSystem.Serialize(testmessage);
             //return serializedEnemyActive;
@@ -32,8 +32,12 @@ namespace PixelCrushers
             /// it to the current state of the game. You can use SaveSystem.Deserialize()
             /// to deserialize the string to an object that specifies the state to apply to
             /// the game.
-            GetComponent<EnemyAI>().Active = SaveSystem.Deserialize<bool>(serializedEnemyActive);
+            //GetComponent<EnemyAI>().Active = SaveSystem.Deserialize<bool>(serializedEnemyActive);
             //GetComponent<EnemyAI>().testLoad = SaveSystem.Deserialize<int>(serializedEnemyActive);
+            if (!string.IsNullOrEmpty(data))
+            {
+                GetComponent<EnemyAI>().Active = (data == "True");
+            }
         }
 
         //public override void ApplyDataImmediate()
