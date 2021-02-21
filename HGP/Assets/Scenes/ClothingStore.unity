@@ -81314,7 +81314,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 295735d788dcd3b4ba4cb459379a6da6, type: 2}
+      objectReference: {fileID: 9100000, guid: f0e386a464121bf41814c865eb9afe28, type: 2}
     - target: {fileID: 5056646922109944846, guid: 4e439e07c3e9df74fa1584a269676f0f,
         type: 3}
       propertyPath: condition.luaConditions.Array.size
