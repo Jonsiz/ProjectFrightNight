@@ -20,7 +20,8 @@ public class CollisionEvents : MonoBehaviour
         {
             //Application.Quit();
             //Debug.Log("GameOver");
-            PixelCrushers.SaveSystem.LoadFromSlot(1);
+            //PixelCrushers.SaveSystem.LoadFromSlot(1);
+            GameObject.Find("SaveAndLoadObject").GetComponent<SaveAndLoadManager>().LoadingdaGame();
         }
     }
 

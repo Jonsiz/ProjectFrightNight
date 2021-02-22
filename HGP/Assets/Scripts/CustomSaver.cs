@@ -8,9 +8,16 @@ namespace PixelCrushers
     /// Then fill in your code where indicated below.
     public class CustomSaver : Saver
     {
-        bool enemyActive;
+        //bool enemyActive;
         string serializedEnemyActive;
-        int testmessage;
+        //int testmessage;
+
+        [System.Serializable]
+        public class EnemyData
+        {
+            public bool enemyActive;
+            public int testmessage;
+        }
 
         public override string RecordData()
         {
@@ -18,9 +25,14 @@ namespace PixelCrushers
             /// You can use SaveSystem.Serialize() to serialize a serializable object to a 
             /// string. This will use the serializer component on the Save System GameObject,
             /// which defaults to JSON serialization.
-            enemyActive = GetComponent<EnemyAI>().Active;
+            var enemyAI = GetComponent<EnemyAI>();
+            var enemyData = new EnemyData();
+            enemyData.enemyActive = enemyAI.Active;
+            enemyData.testmessage = enemyAI.testLoad;
+            return SaveSystem.Serialize(enemyData);
+            //enemyActive = GetComponent<EnemyAI>().Active;
             //serializedEnemyActive = SaveSystem.Serialize(enemyActive);
-            return enemyActive.ToString();
+            //return enemyActive.ToString();
             //testmessage = GetComponent<EnemyAI>().testLoad;
             //serializedEnemyActive = SaveSystem.Serialize(testmessage);
             //return serializedEnemyActive;
@@ -38,6 +50,11 @@ namespace PixelCrushers
             {
                 GetComponent<EnemyAI>().Active = (data == "True");
             }
+            if (string.IsNullOrEmpty(data)) return;
+            var enemyData = SaveSystem.Deserialize<EnemyData>(data);
+            var enemyAI = GetComponent<EnemyAI>();
+            enemyAI.Active = enemyData.enemyActive;
+            enemyAI.testLoad = enemyData.testmessage;
         }
 
         //public override void ApplyDataImmediate()
