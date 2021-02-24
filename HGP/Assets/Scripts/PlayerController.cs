@@ -38,6 +38,11 @@ public class PlayerController : MonoBehaviour
         get {return stamina;}
     }
     private bool exhausted = false;
+    public bool Exhausted
+    {
+        get { return exhausted; }
+    }
+    private bool resting = false;
     private Vector2 velocity;
     private Rigidbody2D rBD2D;
     private float xSpeed;
@@ -66,7 +71,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         //Checks if the player is not exhausted
-        if (!exhausted)
+        if (!resting)
         {
             //Checks if the shift key is pressed, if either horizontal or vertical input are not 0, and if the x or y Speed
             //is not 0. It then increases the player's speed and drains their stamina.
@@ -74,10 +79,14 @@ public class PlayerController : MonoBehaviour
             {
                 sprintSpeed = sprint;
                 stamina -= staminaDrain;
+                if (stamina < maxStamina * staminaEnergyPercentage)
+                {
+                    exhausted = true;
+                }
                 //If stamina goes below 0, exhausted is set to true.
                 if (stamina < 0)
                 {
-                    exhausted = true;
+                    resting = true;
                 }
             }
             else
@@ -91,7 +100,7 @@ public class PlayerController : MonoBehaviour
                 }
                 if (stamina < maxStamina * staminaEnergyPercentage)
                 {
-                    exhausted = true;
+                    resting = true;
                 }
             }
         }
@@ -105,6 +114,7 @@ public class PlayerController : MonoBehaviour
             {
                 stamina = maxStamina;
                 exhausted = false;
+                resting = false;
             }
         }
 
@@ -125,6 +135,21 @@ public class PlayerController : MonoBehaviour
         //The following code calculates the player's movement for Unity's animator (it is done this way to compensate for cases where
         //the player is being automatically moved, such as when they're moving to a hiding position.
 
+        //xSpeed = transform.position.x - prevX;
+        //ySpeed = transform.position.y - prevY;
+
+        //prevX = transform.position.x;
+        //prevY = transform.position.y;
+
+        //Vector2 magnitude = new Vector2(xSpeed, ySpeed);
+
+        //playerAnimator.SetFloat("Horizontal", xSpeed);
+        //playerAnimator.SetFloat("Vertical", ySpeed);
+        //playerAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
+    }
+
+    void Update()
+    {
         xSpeed = transform.position.x - prevX;
         ySpeed = transform.position.y - prevY;
 
