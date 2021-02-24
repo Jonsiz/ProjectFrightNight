@@ -10,10 +10,13 @@ public class DarknessFade : MonoBehaviour
 {
     private Image image;
     private float fadeGoal;
+    [SerializeField]
     private Color color;
     private float fadeSpeed = 0.01f;
     [SerializeField]
     private PlayerController childStamina;
+    [SerializeField]
+    private Color exhaustionColor;
     void Start()
     {
         image = GetComponent<Image>();
@@ -26,7 +29,7 @@ public class DarknessFade : MonoBehaviour
     void FixedUpdate()
     {
         //Sets the alpha of the image. See above. Originally it would just fade in or out as an environmental effect.
-        color = image.color;
+        color.a = image.color.a;
         //if (color.a < fadeGoal)
         //{
         //    color.a += fadeSpeed;
@@ -38,7 +41,18 @@ public class DarknessFade : MonoBehaviour
         var exhaustion = 1.0f - childStamina.Stamina / childStamina.MaxStamina;
         color.a = exhaustion;
         color.a = Mathf.Round(color.a * 100f) / 100f;
-        image.color = color;
+        exhaustionColor.a = color.a;
+
+        if (childStamina.Exhausted)
+        {
+            image.color = exhaustionColor;
+        }
+        else
+        {
+            image.color = color;
+        }
+
+        Debug.Log(childStamina.Exhausted);
     }
 
     void Update()
