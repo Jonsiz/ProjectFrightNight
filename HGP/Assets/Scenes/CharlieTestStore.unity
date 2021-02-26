@@ -75251,11 +75251,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a389bc68211f94fb6b8ae9f1a8a281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayGridGizmos: 1
+  displayGridGizmos: 0
   unwalkableMask:
     serializedVersion: 2
     m_Bits: 2048
-  gridWorldSize: {x: 90, y: 75}
+  gridWorldSize: {x: 120, y: 80}
   nodeRadius: 0.5
 --- !u!4 &1020974808
 Transform:
@@ -75265,7 +75265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020974804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -75974,8 +75974,6 @@ GameObject:
   - component: {fileID: 1180153302}
   - component: {fileID: 1180153301}
   - component: {fileID: 1180153300}
-  - component: {fileID: 1180153299}
-  - component: {fileID: 1180153298}
   - component: {fileID: 1180153297}
   - component: {fileID: 1180153296}
   - component: {fileID: 1180153295}
@@ -75994,7 +75992,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180153294}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b04df263a5c264c8d4b03aec907ef7, type: 3}
   m_Name: 
@@ -76010,7 +76008,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180153294}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1af33a602e20a3d4ca46c8a6ef942618, type: 3}
   m_Name: 
@@ -76033,43 +76031,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a0d535d7861594db24256e0e9cf41c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1180153298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180153294}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b35e8f695eb668e4b889b95bd9d0da9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1316772852}
-  - {fileID: 927047308}
-  speed: 3
-  waitTime: 0
-  pathing: 0
-  looping: 0
---- !u!114 &1180153299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180153294}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66420b5884ce7c342a9737db1a218727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 50649228}
-  walkSpeed: 2
-  runSpeed: 10
-  sightRadius: 10
-  active: 0
-  testLoad: 10
 --- !u!50 &1180153300
 Rigidbody2D:
   serializedVersion: 4
@@ -76409,7 +76370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180153294}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.12, y: -21.68, z: 0}
+  m_LocalPosition: {x: 18.2, y: -21.5, z: 0}
   m_LocalScale: {x: 2.6, y: 2.8, z: 1}
   m_Children:
   - {fileID: 183976888}
@@ -76429,7 +76390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 50649228}
-  speed: 7
+  speed: 5
 --- !u!1 &1180754414
 GameObject:
   m_ObjectHideFlags: 0
@@ -81892,12 +81853,12 @@ PrefabInstance:
     - target: {fileID: 5056646922109944839, guid: 4e439e07c3e9df74fa1584a269676f0f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.6
+      value: -42.4
       objectReference: {fileID: 0}
     - target: {fileID: 5056646922109944839, guid: 4e439e07c3e9df74fa1584a269676f0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9226251
+      value: 24.2
       objectReference: {fileID: 0}
     - target: {fileID: 5056646922109944839, guid: 4e439e07c3e9df74fa1584a269676f0f,
         type: 3}

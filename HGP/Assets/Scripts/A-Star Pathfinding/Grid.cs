@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
+    /// <summary>
+    /// This script is used to set up the Grid used by the pathfinding process. This Grid is created
+    /// within the gridSize values that can be adjusted within the Inspector. It makes use of the Node class
+    /// to set up an array that includes every Node on the Grid.
+    /// </summary>
+
+
     //public bool OnlyDisplayPathGizmos;
 
     public bool displayGridGizmos;
@@ -45,7 +52,7 @@ public class Grid : MonoBehaviour
             {
                 Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.up * (y + nodeDiameter + nodeRadius);
                 //bool walkable = !(Physics.CheckSphere(worldPoint, nodeRadius, unwalkableMask));
-                bool walkable = !(Physics2D.OverlapCircle(worldPoint, nodeRadius, unwalkableMask));
+                bool walkable = !(Physics2D.OverlapCircle(worldPoint, nodeRadius * 2, unwalkableMask));
                 grid[x, y] = new Node(walkable, worldPoint, x, y);
             }
         }
