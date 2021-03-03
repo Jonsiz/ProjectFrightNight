@@ -52,7 +52,7 @@ public class DarknessFade : MonoBehaviour
             image.color = color;
         }
 
-        Debug.Log(childStamina.Exhausted);
+        //Debug.Log(childStamina.Exhausted);
     }
 
     void Update()

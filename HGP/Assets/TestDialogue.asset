@@ -2858,7 +2858,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 465.0843
-        y: 727.17957
+        y: 725.8097
         width: 160
         height: 30
     - id: 31
@@ -2994,7 +2994,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 465.0843
-        y: 828.2105
+        y: 826.84064
         width: 160
         height: 30
     - id: 33
@@ -4014,7 +4014,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 130
+        y: 129
         width: 160
         height: 30
     - id: 3
@@ -6967,7 +6967,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 643
-        y: 147
+        y: 146.02913
         width: 160
         height: 30
     - id: 5
@@ -7053,7 +7053,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -7081,7 +7081,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: SendMessage(Activate,gazebos,Checkpoint);
+        value: SetActive(Checkpoint,true);SendMessage(ActivateCheckpoint,,Checkpoint);
         type: 0
         typeString: 
       conversationID: 12
@@ -7100,7 +7100,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 643
-        y: 197
+        y: 195.05826
         width: 160
         height: 30
     canvasScrollPosition: {x: 22.330063, y: 23.300964}

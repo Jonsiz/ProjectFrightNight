@@ -32,10 +32,11 @@ public class NodePath : MonoBehaviour
         {
             //Sets the speed, and moves the player toward the next node.
             float step = speed * Time.deltaTime;
+            Debug.Log(nodeCount);
             transform.position = Vector2.MoveTowards(transform.position, nodes[nodeCount].transform.position, step);
 
             //If the object position is the same as the next node, starts a coroutine.
-            if ((Vector2)transform.position == (Vector2)nodes[nodeCount].transform.position)
+            if ((Vector2)transform.position == (Vector2)nodes[nodeCount].transform.position && !waiting)
             {
                 StartCoroutine("WaitTime");
             }
@@ -45,18 +46,24 @@ public class NodePath : MonoBehaviour
 
     IEnumerator WaitTime()
     {
+        waiting = true;
         //Waits the specified amount of time.
         yield return new WaitForSeconds(waitTime);
 
-        //Checks if the object has touched every previous node and if it is set to loop it's path.
-        if (nodeCount + 1 == nodes.Count && looping)
-        {
-            nodeCount = 0;
-        }
-        else
-        //Otherwise it adds 1 to the nodeCount.
+        //Increments the nodeCount if not all of the nodes have been touched.
+        if (nodeCount < nodes.Count - 1)
         {
             nodeCount++;
         }
+        else
+        {
+            //If all the nodes have been touched and looping is set to true, nodeCount is set to 0;
+            if (looping)
+            {
+                nodeCount = 0;
+            }
+        }
+
+        waiting = false;
     }
 }
