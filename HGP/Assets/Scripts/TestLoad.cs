@@ -25,7 +25,7 @@ public class TestLoad : MonoBehaviour
         {
             //PixelCrushers.SaveSystem.SaveToSlot(1);
             //GameObject checkpoint = GameObject.Find("SaveCollider");
-            checkpoint.GetComponent<CheckpointActivate>().Activate("gazebos");
+            checkpoint.GetComponent<CheckpointActivate>().ActivateCheckpoint();
         }
     }
 }
