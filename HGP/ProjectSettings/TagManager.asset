@@ -9,6 +9,7 @@ TagManager:
   - Exit
   - Enemy
   - GameOver
+  - Aud_Prop
   layers:
   - Default
   - TransparentFX
