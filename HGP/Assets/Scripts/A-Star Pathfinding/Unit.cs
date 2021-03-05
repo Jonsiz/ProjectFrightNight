@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
+    [SerializeField]
+    bool displayRangeGizmo;
+    [SerializeField]
+    float speed = 5;
+    [SerializeField]
+    Transform[] patrolZones;
+    [SerializeField]
+    float targetRange;
+
     Transform target;
-    public float speed = 5;
     Vector3[] path;
     int targetIndex;
-
-    public float targetRange;
-    public bool isChasing;
-
-    public Transform[] patrolZones;
+    bool isChasing;
 
 
     void Start()
@@ -82,11 +86,18 @@ public class Unit : MonoBehaviour
 
     public bool CanFindPlayer()
     {
+        // Find the Player in the scene, and get a reference to the Player Controller script.
         GameObject target = GameObject.FindGameObjectWithTag("Player");
+        PlayerController targetScript = target.GetComponent<PlayerController>();
 
-        if (Vector3.Distance(target.transform.position, transform.position) < targetRange)
+        // If the Player is not hidden, check the distance between the Unit and the Player.
+        // Returns true if the Player is within range, otherwise returns false.
+        if (!targetScript.Hidden)
         {
-            return true;
+            if (Vector3.Distance(target.transform.position, transform.position) < targetRange)
+            {
+                return true;
+            }
         }
 
         return false;
@@ -113,8 +124,11 @@ public class Unit : MonoBehaviour
             }
         }
 
-        // Gizmo used to display the Unit's targeting range in the editor.
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, targetRange);
+        // Gizmo used to display the Unit's targeting range in the editor, if this feature is enabled.
+        if (displayRangeGizmo)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, targetRange);
+        }
     }
 }
