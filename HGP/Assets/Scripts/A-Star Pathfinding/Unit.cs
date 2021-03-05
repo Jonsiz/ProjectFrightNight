@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    public Transform target;
+    Transform target;
     public float speed = 5;
     Vector3[] path;
     int targetIndex;
+
+    public float targetRange;
+    public bool isChasing;
+
+    public Transform[] patrolZones;
+
 
     void Start()
     {
@@ -16,7 +22,16 @@ public class Unit : MonoBehaviour
 
     private void Update()
     {
-        PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+        if (CanFindPlayer())
+        {
+            isChasing = true;
+            target = GameObject.FindGameObjectWithTag("Player").transform;
+            PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+        }
+        else
+        {
+            isChasing = false;
+        }
     }
 
     public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
@@ -52,6 +67,32 @@ public class Unit : MonoBehaviour
         }
     }
 
+    /*public void PatrolArea()
+    {
+        for (int i = 0; i < patrolZones.Length; i++)
+        {
+            target = patrolZones[i];
+
+            while (transform.position != target.position)
+            {
+                PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+            }
+        }
+    }*/
+
+    public bool CanFindPlayer()
+    {
+        GameObject target = GameObject.FindGameObjectWithTag("Player");
+
+        if (Vector3.Distance(target.transform.position, transform.position) < targetRange)
+        {
+            return true;
+        }
+
+        return false;
+
+    }
+
     public void OnDrawGizmos()
     {
         if (path != null)
@@ -71,5 +112,9 @@ public class Unit : MonoBehaviour
                 }
             }
         }
+
+        // Gizmo used to display the Unit's targeting range in the editor.
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, targetRange);
     }
 }
