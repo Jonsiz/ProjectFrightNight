@@ -7,7 +7,13 @@ public class Unit : MonoBehaviour
     [SerializeField]
     bool displayRangeGizmo;
     [SerializeField]
-    float speed = 5;
+    bool canPathfind;
+
+    [SerializeField]
+    float speed;
+    [SerializeField]
+    float maxSpeed;
+
     [SerializeField]
     Transform[] patrolZones;
     [SerializeField]
@@ -21,20 +27,24 @@ public class Unit : MonoBehaviour
 
     void Start()
     {
-        //PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+        
     }
 
     private void Update()
     {
-        if (CanFindPlayer())
+        if (canPathfind)
         {
-            isChasing = true;
-            target = GameObject.FindGameObjectWithTag("Player").transform;
-            PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
-        }
-        else
-        {
-            isChasing = false;
+            if (CanFindPlayer())
+            {
+                isChasing = true;
+                target = GameObject.FindGameObjectWithTag("Player").transform;
+                PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+            }
+            else
+            {
+                isChasing = false;
+                StopCoroutine("FollowPath");
+            }
         }
     }
 
