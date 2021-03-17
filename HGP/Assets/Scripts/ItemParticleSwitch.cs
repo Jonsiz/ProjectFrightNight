@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class ItemParticleSwitch : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private ParticleSystem particle;
+
+    private void Awake()
     {
-        
+        particle = GetComponentInChildren<ParticleSystem>();
+        ParticleOff();
+        StartCoroutine("WaitTime");
+        //particle.Stop();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ParticleOn()
     {
-        
+        particle.Play();
+    }
+
+    public void ParticleOff()
+    {
+        particle.Stop();
+    }
+
+    IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(60);
+
+        ParticleOn();
     }
 }

@@ -32,7 +32,7 @@ public class NodePath : MonoBehaviour
         {
             //Sets the speed, and moves the player toward the next node.
             float step = speed * Time.deltaTime;
-            Debug.Log(nodeCount);
+            //Debug.Log(nodeCount);
             transform.position = Vector2.MoveTowards(transform.position, nodes[nodeCount].transform.position, step);
 
             //If the object position is the same as the next node, starts a coroutine.
