@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
         if(scene.name == "ToyStore")
         {
             Play("TS_Theme");
-
+            Play("TS_Ambience");
         }
 
     }
