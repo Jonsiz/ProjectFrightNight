@@ -2787,7 +2787,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 463.84424
-        y: 674.1427
+        y: 672.7728
         width: 160
         height: 30
     - id: 30
@@ -3664,7 +3664,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);SendMessage(ParticleOn,,everyone);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -5026,7 +5026,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);SendMessage(ActivateEnemy,true,SecurityGuard);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 7
@@ -5045,7 +5045,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 37
-        y: 142.96907
+        y: 141.93814
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -7099,8 +7099,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 643
-        y: 195.05826
+        x: 647.8544
+        y: 220.30096
         width: 160
         height: 30
     canvasScrollPosition: {x: 22.330063, y: 23.300964}

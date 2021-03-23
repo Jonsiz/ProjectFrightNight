@@ -16,10 +16,10 @@ public class CollisionEvents : MonoBehaviour
             SceneManager.LoadScene("Chris_Main_Menu");
             Debug.Log("Exit");
         }
-        else if (collision.gameObject.tag == "GameOver")
+        else if (collision.gameObject.tag == "GameOver" || collision.gameObject.tag == "Enemy")
         {
             //Application.Quit();
-            //Debug.Log("GameOver");
+            Debug.Log("GameOver");
             //PixelCrushers.SaveSystem.LoadFromSlot(1);
             GameObject.Find("SaveAndLoadObject").GetComponent<SaveAndLoadManager>().LoadingdaGame();
         }

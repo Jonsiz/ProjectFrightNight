@@ -189,9 +189,9 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void ActivateEnemy(string boolean)
-    {
-        //Sets the enemy to active, in relation to the nodepath script.
-        active = Boolean.Parse(boolean);
-    }
+    //void ActivateEnemy(string boolean)
+    //{
+    //    //Sets the enemy to active, in relation to the nodepath script.
+    //    active = Boolean.Parse(boolean);
+    //}
 }
