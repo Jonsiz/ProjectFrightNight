@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,11 @@ public class Unit : MonoBehaviour
     bool displayRangeGizmo;
     [SerializeField]
     bool canPathfind;
+
+    public bool CanPathFind
+    {
+        get { return canPathfind; }
+    }
 
     [SerializeField]
     float speed;
@@ -24,10 +30,19 @@ public class Unit : MonoBehaviour
     int targetIndex;
     bool isChasing;
 
+    private float xSpeed;
+    private float ySpeed;
+    private float prevX;
+    private float prevY;
+    private Animator enemyAnimator;
 
-    void Start()
+    private PixelCrushers.DialogueSystem.Usable usable;
+
+
+    void Awake()
     {
-        
+        enemyAnimator = GetComponent<Animator>();
+        usable = GetComponent<PixelCrushers.DialogueSystem.Usable>();
     }
 
     private void Update()
@@ -46,6 +61,19 @@ public class Unit : MonoBehaviour
                 StopCoroutine("FollowPath");
             }
         }
+
+        //The code below calculates the speed the enemy is moving in order to inform Unity's animator.
+        xSpeed = transform.position.x - prevX;
+        ySpeed = transform.position.y - prevY;
+
+        prevX = transform.position.x;
+        prevY = transform.position.y;
+
+        Vector2 magnitude = new Vector2(xSpeed, ySpeed);
+
+        enemyAnimator.SetFloat("HorizontalMovement", xSpeed);
+        enemyAnimator.SetFloat("VerticalMovement", ySpeed);
+        enemyAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
     }
 
     public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
@@ -140,5 +168,12 @@ public class Unit : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, targetRange);
         }
+    }
+
+    void ActivateEnemy(string boolean)
+    {
+        //Sets the enemy to active, in relation to the nodepath script.
+        canPathfind = Boolean.Parse(boolean);
+        usable.enabled = false;
     }
 }

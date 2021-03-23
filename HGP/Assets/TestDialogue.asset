@@ -5026,7 +5026,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);SendMessage(ActivateEnemy,true,SecurityGuard);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 7

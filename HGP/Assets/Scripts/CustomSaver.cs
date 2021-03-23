@@ -25,10 +25,10 @@ namespace PixelCrushers
             /// You can use SaveSystem.Serialize() to serialize a serializable object to a 
             /// string. This will use the serializer component on the Save System GameObject,
             /// which defaults to JSON serialization.
-            var enemyAI = GetComponent<EnemyAI>();
+            var enemyAI = GetComponent<Unit>();
             var enemyData = new EnemyData();
-            enemyData.enemyActive = enemyAI.Active;
-            enemyData.testmessage = enemyAI.testLoad;
+            enemyData.enemyActive = enemyAI.CanPathFind;
+            //enemyData.testmessage = enemyAI.testLoad;
             return SaveSystem.Serialize(enemyData);
             //enemyActive = GetComponent<EnemyAI>().Active;
             //serializedEnemyActive = SaveSystem.Serialize(enemyActive);
