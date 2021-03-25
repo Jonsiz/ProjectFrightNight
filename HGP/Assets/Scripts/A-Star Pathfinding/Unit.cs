@@ -175,5 +175,6 @@ public class Unit : MonoBehaviour
         //Sets the enemy to active, in relation to the nodepath script.
         canPathfind = Boolean.Parse(boolean);
         usable.enabled = false;
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }
 }
