@@ -1,17 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class ItemParticleSwitch : MonoBehaviour
 {
     private ParticleSystem particle;
     private Color color;
-    private float fadeSpeed = 0.001f;
-    private float fadeTarget = 0;
+    private Usable usable;
+    [SerializeField]
+    private float waitTime = 15;
+    
+    //private float fadeSpeed = 0.001f;
+    //private float fadeTarget = 0;
 
     private void Awake()
     {
         particle = GetComponentInChildren<ParticleSystem>();
+        usable = GetComponent<Usable>();
+        particle.GetComponent<Renderer>().sortingOrder = 32000;
         ParticleOff();
         //color = particle.startColor;
         //color.a = 1;
@@ -22,7 +29,7 @@ public class ItemParticleSwitch : MonoBehaviour
 
     private void Update()
     {
-        color = particle.startColor;
+        //color = particle.startColor;
 
         //if (color.a < fadeTarget)
         //{
@@ -32,7 +39,7 @@ public class ItemParticleSwitch : MonoBehaviour
         //{
         //    color.a -= fadeSpeed;
         //}
-        color.a = Mathf.Round((color.a * 10000)) / 10000;
+        //color.a = Mathf.Round((color.a * 10000)) / 10000;
         //Debug.Log(color.a);
 
         //particle.startColor = color;
@@ -48,14 +55,14 @@ public class ItemParticleSwitch : MonoBehaviour
     public void ParticleOff()
     {
         particle.Stop();
-        fadeTarget = 0.0f;
+        //fadeTarget = 0.0f;
     }
 
     IEnumerator WaitTime()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(waitTime);
 
         particle.Play();
-        fadeTarget = 1.0f;
+        //fadeTarget = 1.0f;
     }
 }

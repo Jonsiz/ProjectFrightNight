@@ -3040,7 +3040,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);SendMessage(ParticleOn,,Tall_front_shelf);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3062,8 +3062,8 @@ MonoBehaviour:
         y: 329.56326
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 463.0133}
-    canvasZoom: 0.7300005
+    canvasScrollPosition: {x: 22.602749, y: 163.57835}
+    canvasZoom: 0.8500004
   - id: 3
     fields:
     - title: Title
@@ -3375,7 +3375,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);SendMessage(ParticleOn,,everyone);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3618,7 +3618,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 544
-        y: 201
+        y: 199.93619
         width: 160
         height: 30
     - id: 7
@@ -3664,7 +3664,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);SendMessage(ParticleOn,,everyone);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3760,7 +3760,7 @@ MonoBehaviour:
         y: 150
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 65.95746}
+    canvasScrollPosition: {x: 0, y: 78.72342}
     canvasZoom: 0.94000006
   - id: 4
     fields:
@@ -5026,7 +5026,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);SendMessage(ActivateEnemy,true,SecurityGuard);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 7
@@ -10093,8 +10093,8 @@ MonoBehaviour:
         y: 219
         width: 160
         height: 30
-    canvasScrollPosition: {x: 25.862015, y: 34.913734}
-    canvasZoom: 0.64000034
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1.0900002
   - id: 23
     fields:
     - title: Title

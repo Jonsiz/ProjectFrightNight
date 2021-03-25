@@ -16,7 +16,7 @@ public class CollisionEvents : MonoBehaviour
             SceneManager.LoadScene("Chris_Main_Menu");
             Debug.Log("Exit");
         }
-        else if (collision.gameObject.tag == "GameOver" || collision.gameObject.tag == "Enemy")
+        else if (collision.gameObject.tag == "GameOver")
         {
             //Application.Quit();
             Debug.Log("GameOver");
