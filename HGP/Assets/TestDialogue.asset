@@ -11821,7 +11821,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: SetActive(NPC's in a Line,false);
         type: 0
         typeString: 
       conversationID: 27
@@ -11847,7 +11847,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 245
-        y: 402
+        y: 400.82355
         width: 160
         height: 30
     - id: 8
@@ -12060,8 +12060,8 @@ MonoBehaviour:
         y: 552
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 212.9411}
+    canvasZoom: 0.85000014
   - id: 28
     fields:
     - title: Title
@@ -12528,7 +12528,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 24
-        y: 302
+        y: 300.73416
         width: 160
         height: 30
     - id: 9
@@ -12574,7 +12574,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: SetActive(NPC's in a Line,false);
         type: 0
         typeString: 
       conversationID: 28
@@ -12601,8 +12601,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 27
-        y: 370
+        x: 25.734177
+        y: 368.7342
         width: 160
         height: 30
     - id: 11
@@ -12741,8 +12741,8 @@ MonoBehaviour:
         y: 483
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 178.48096}
+    canvasZoom: 0.7900002
   - id: 29
     fields:
     - title: Title
@@ -13538,7 +13538,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: SetActive(NPC's in a Line,false);
         type: 0
         typeString: 
       conversationID: 29
@@ -13777,8 +13777,8 @@ MonoBehaviour:
         y: 704
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9100001
+    canvasScrollPosition: {x: 0, y: 268.23526}
+    canvasZoom: 0.85000014
   - id: 30
     fields:
     - title: Title
@@ -15423,7 +15423,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 180
+        y: 179
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -15596,7 +15596,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'SetActive(Frazzled Woman,false);
+
+          SetActive(Bratty Kid,false);'
         type: 0
         typeString: 
       conversationID: 34
@@ -15618,7 +15620,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 80
+        y: 77.96907
         width: 160
         height: 30
     - id: 2
@@ -15753,7 +15755,7 @@ MonoBehaviour:
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 1.0000001
   syncInfo:
     syncActors: 0
     syncItems: 0
