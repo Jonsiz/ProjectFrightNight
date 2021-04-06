@@ -16271,8 +16271,8 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == true and (CurrentQuestEntryState("Look
-        for mother", 3) == "success")
+      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
+        for mother", 1) == "active")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16343,8 +16343,8 @@ MonoBehaviour:
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
-        for mother", 1) == "active")
+      conditionsString: Variable["PickedUpConsole"] == true and (CurrentQuestEntryState("Look
+        for mother", 3) == "success")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -18055,8 +18055,8 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 372.41357}
-    canvasZoom: 0.58000034
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.6400003
   - id: 36
     fields:
     - title: Title
