@@ -15931,7 +15931,10 @@ MonoBehaviour:
       - title: Sequence
         value: 'SetActive(Frazzled Woman,false);
 
-          SetActive(Bratty Kid,false);'
+          SetActive(Bratty Kid,false);
+
+          SetActive(Teen
+          Bully Trigger);'
         type: 0
         typeString: 
       conversationID: 34
@@ -16084,7 +16087,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 425
-        y: 71
+        y: 70
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -16323,7 +16326,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: MoveTo(Child Approach Target,Child_1,2.5);
         type: 0
         typeString: 
       conversationID: 35
@@ -17201,7 +17204,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 455
+        y: 453.36066
         width: 160
         height: 30
     - id: 15
@@ -17247,7 +17250,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: MoveTo(
         type: 0
         typeString: 
       conversationID: 35
@@ -17272,7 +17275,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 505
+        y: 503.5714
         width: 160
         height: 30
     - id: 16
@@ -18044,8 +18047,8 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.97
+    canvasScrollPosition: {x: 0, y: 268.85236}
+    canvasZoom: 0.6100003
   - id: 36
     fields:
     - title: Title

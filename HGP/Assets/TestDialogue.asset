@@ -15931,7 +15931,10 @@ MonoBehaviour:
       - title: Sequence
         value: 'SetActive(Frazzled Woman,false);
 
-          SetActive(Bratty Kid,false);'
+          SetActive(Bratty Kid,false);
+
+          SetActive(Teen
+          Bully Trigger);'
         type: 0
         typeString: 
       conversationID: 34
@@ -16084,7 +16087,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 425
-        y: 71
+        y: 70
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -16268,8 +16271,8 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
-        for mother", 1) == "active")
+      conditionsString: Variable["PickedUpConsole"] == true and (CurrentQuestEntryState("Look
+        for mother", 3) == "success")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16323,7 +16326,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: MoveTo(Child Approach Target,Child_1,2.5);
         type: 0
         typeString: 
       conversationID: 35
@@ -16340,8 +16343,8 @@ MonoBehaviour:
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == true and (CurrentQuestEntryState("Look
-        for mother", 3) == "success")
+      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
+        for mother", 1) == "active")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -17201,7 +17204,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 455
+        y: 453.36066
         width: 160
         height: 30
     - id: 15
@@ -17247,7 +17250,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'MoveTo(Teen Push Target,Bully Leader,1.2);
+
+          Delay(1.2);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17272,7 +17277,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 505
+        y: 503.5714
         width: 160
         height: 30
     - id: 16
@@ -17318,7 +17323,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: MoveTo(Child Fall Target,Child_1,0.2);
         type: 0
         typeString: 
       conversationID: 35
@@ -17673,7 +17678,13 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'MoveTo(Teen Runaway Target,Bully Leader,3);
+
+          MoveTo(Teen
+          Runaway Target,Bully Kid1,3);
+
+          MoveTo(Teen Runaway Target,Bully
+          Kid2,3);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17744,7 +17755,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: MoveTo(Guard Approach Target,Elevator Security,2.5);
         type: 0
         typeString: 
       conversationID: 35
@@ -18044,8 +18055,8 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.97
+    canvasScrollPosition: {x: 0, y: 372.41357}
+    canvasZoom: 0.58000034
   - id: 36
     fields:
     - title: Title
