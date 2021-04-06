@@ -76371,7 +76371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overrideName: 
   overrideUseMessage: 
-  maxUseDistance: 5
+  maxUseDistance: 7
   events:
     onSelect:
       m_PersistentCalls:
@@ -76473,7 +76473,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04, y: 0.03}
+  m_Offset: {x: -0.03999999, y: 1.1809111}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -76484,7 +76484,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 1.53}
+  m_Size: {x: 0.74, y: 4.1248264}
   m_EdgeRadius: 0
 --- !u!114 &1044934194
 MonoBehaviour:
@@ -83215,9 +83215,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 125850, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 125852, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_Name
       value: Dialogue Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 125852, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -84207,7 +84215,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04, y: 0.03}
+  m_Offset: {x: -0.028833568, y: -0.32732084}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -84218,7 +84226,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 1.53}
+  m_Size: {x: 1.1196538, y: 2.2446413}
   m_EdgeRadius: 0
 --- !u!114 &1889261812
 MonoBehaviour:
