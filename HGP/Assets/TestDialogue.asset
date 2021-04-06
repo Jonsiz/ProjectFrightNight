@@ -7967,7 +7967,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active" and
-        (Variable["CheckedRoom"] == false)
+        (Variable["CheckedRack2"] == false)
       userScript: 'SetQuestEntryState("Leave Store", 5, "success");
 
         Variable["CheckedRoom"]
@@ -8700,7 +8700,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
+        x: 209
         y: 107
         width: 160
         height: 30
@@ -8834,8 +8834,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 215
-        y: 194
+        x: 218
+        y: 195
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
