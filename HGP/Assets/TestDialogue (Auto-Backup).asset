@@ -16326,7 +16326,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: MoveTo(Child Approach Target,Child_1,2.5);
+        value: 'MoveTo(Child Approach Target,Child_1,1.5);
+
+          AnimatorFloat(Speed,0,Child_1)@1.5;
+
+          AnimatorPlay(Player_Up_IdleB,Child_1)@1.5;'
         type: 0
         typeString: 
       conversationID: 35
@@ -16778,7 +16782,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 154
+        y: 149.23569
         width: 160
         height: 30
     - id: 9
@@ -16824,7 +16828,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AnimatorPlay(Forward_Idle,Bully Kid2);
         type: 0
         typeString: 
       conversationID: 35
@@ -16849,7 +16853,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 204
+        y: 202.36066
         width: 160
         height: 30
     - id: 10
@@ -16895,7 +16899,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'MoveTo(Teen Step Forward Target,Bully Leader,0.5);
+
+          AnimatorPlay(FORWARD,Bully
+          Leader);
+
+          AnimatorPlay(Forward_Idle,BullyLeader)@0.5);'
         type: 0
         typeString: 
       conversationID: 35
@@ -16919,7 +16928,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
+        x: 406.49255
         y: 254
         width: 160
         height: 30
@@ -17037,7 +17046,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AnimatorPlay(Forward_Idle,Bully Kid1);
         type: 0
         typeString: 
       conversationID: 35
@@ -17132,8 +17141,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
-        y: 405
+        x: 403.36066
+        y: 401.7213
         width: 160
         height: 30
     - id: 14
@@ -17204,7 +17213,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 453.36066
+        y: 451.7213
         width: 160
         height: 30
     - id: 15
@@ -17252,6 +17261,11 @@ MonoBehaviour:
       - title: Sequence
         value: 'MoveTo(Teen Push Target,Bully Leader,1.2);
 
+          AnimatorPlay(FORWARD,Bully
+          Leader);
+
+          AnimatorPlay(Left_Idle,Bully Leader)@1.2;
+
           Delay(2.5);'
         type: 0
         typeString: 
@@ -17277,7 +17291,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 503.5714
+        y: 501.932
         width: 160
         height: 30
     - id: 16
@@ -17323,7 +17337,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: MoveTo(Child Fall Target,Child_1,0.2);
+        value: 'MoveTo(Child Fall Target,Child_1,0.2);
+
+          AnimatorPlay(SHOVE,Bully
+          Leader);
+
+          AnimatorPlay(Child_Fall,Child_1);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17348,7 +17367,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 555
+        y: 551.7213
         width: 160
         height: 30
     - id: 17
@@ -17394,7 +17413,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AnimatorPlay(Idle_Left,Bully Leader);
         type: 0
         typeString: 
       conversationID: 35
@@ -17418,8 +17437,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
-        y: 605
+        x: 406.63934
+        y: 603.3606
         width: 160
         height: 30
     - id: 18
@@ -17465,7 +17484,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'MoveTo(Child Approach Target,Bully Leader,0.2);
+
+          AnimatorPlay(LEFT,Bully
+          Leader);
+
+          AnimatorPlay(Left_Idle,Bully Leader)@0.2);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17631,7 +17655,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
+        x: 406.63934
         y: 755
         width: 160
         height: 30
@@ -17684,7 +17708,14 @@ MonoBehaviour:
           Runaway Target,Bully Kid1,3);
 
           MoveTo(Teen Runaway Target,Bully
-          Kid2,3);'
+          Kid2,3);
+
+          AnimatorPlay(FORWARD,Bully Leader);
+
+          AnimatorPlay(FORWARD,Bully
+          Kid1);
+
+          AnimatorPlay(FORWARD,Bully Kid2);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17780,7 +17811,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 855
+        y: 853.36066
         width: 160
         height: 30
     - id: 23
@@ -18055,8 +18086,8 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6400002
+    canvasScrollPosition: {x: 0, y: 384.03043}
+    canvasZoom: 0.61000025
   - id: 36
     fields:
     - title: Title

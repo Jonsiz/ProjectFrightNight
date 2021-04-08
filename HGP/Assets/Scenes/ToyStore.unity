@@ -1086,7 +1086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76891094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.84, y: 12.18, z: -166.54883}
+  m_LocalPosition: {x: -9.84, y: 12.18, z: 0}
   m_LocalScale: {x: 0.625, y: 0.58823526, z: 1}
   m_Children: []
   m_Father: {fileID: 996759636}
@@ -3402,6 +3402,7 @@ GameObject:
   - component: {fileID: 310628710}
   - component: {fileID: 310628709}
   - component: {fileID: 310628711}
+  - component: {fileID: 310628712}
   m_Layer: 0
   m_Name: Elevator Security
   m_TagString: Untagged
@@ -3500,6 +3501,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8405692, y: 2.483227}
   m_EdgeRadius: 0
+--- !u!95 &310628712
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310628708}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f28b8c97a733bf4993db16bb1ba7cf9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &329206401
 GameObject:
   m_ObjectHideFlags: 0
@@ -5508,6 +5528,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &529194849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 529194850}
+  m_Layer: 0
+  m_Name: Teen Step Forward Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &529194850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529194849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.17, y: 12.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 996759636}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547831614
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,6 +6292,7 @@ GameObject:
   - component: {fileID: 645706554}
   - component: {fileID: 645706555}
   - component: {fileID: 645706556}
+  - component: {fileID: 645706557}
   m_Layer: 0
   m_Name: Bully Kid1
   m_TagString: Untagged
@@ -6351,6 +6402,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34495872, y: 1.1558688}
   m_EdgeRadius: 0
+--- !u!95 &645706557
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645706552}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ab8323e6c168244aaab8ae04bd27ea0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &653073444
 GameObject:
   m_ObjectHideFlags: 0
@@ -8552,6 +8622,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &851745033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851745034}
+  - component: {fileID: 851745035}
+  m_Layer: 0
+  m_Name: Bully Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &851745034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851745033}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 0.78571427, y: 0.73333335, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1659632578}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &851745035
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851745033}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 7.0743093
+  m_Depth: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &857114201
 GameObject:
   m_ObjectHideFlags: 0
@@ -9322,6 +9466,8 @@ Transform:
   - {fileID: 1598871832}
   - {fileID: 1289149600}
   - {fileID: 76891095}
+  - {fileID: 529194850}
+  - {fileID: 1364761370}
   m_Father: {fileID: 0}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9682,9 +9828,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1654325665
-  m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingLayerID: 1560997433
+  m_SortingLayer: 8
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 8278962202c025a4ea7a8a7b30efb7d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11653,7 +11799,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289149599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.02, y: -2.65, z: -166.54883}
+  m_LocalPosition: {x: -2.02, y: -2.65, z: 0}
   m_LocalScale: {x: 0.625, y: 0.58823526, z: 1}
   m_Children: []
   m_Father: {fileID: 996759636}
@@ -20768,6 +20914,7 @@ GameObject:
   - component: {fileID: 1345071988}
   - component: {fileID: 1345071989}
   - component: {fileID: 1345071990}
+  - component: {fileID: 1345071991}
   m_Layer: 0
   m_Name: Bully Kid2
   m_TagString: Untagged
@@ -20877,6 +21024,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.56544244, y: 1.2312154}
   m_EdgeRadius: 0
+--- !u!95 &1345071991
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345071986}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 569ae32751433a54a90c2226d53322a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1346275804
 GameObject:
   m_ObjectHideFlags: 0
@@ -20907,6 +21073,36 @@ Transform:
   - {fileID: 1939709271}
   m_Father: {fileID: 0}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1364761369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364761370}
+  m_Layer: 0
+  m_Name: Teen Pickup Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364761370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364761369}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.15, y: 12.42, z: 0}
+  m_LocalScale: {x: 0.625, y: 0.58823526, z: 1}
+  m_Children: []
+  m_Father: {fileID: 996759636}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366137733
 GameObject:
@@ -21952,7 +22148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598871831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.9, y: 12.08, z: -166.54883}
+  m_LocalPosition: {x: -4.9, y: 12.42, z: 0}
   m_LocalScale: {x: 0.625, y: 0.58823526, z: 1}
   m_Children: []
   m_Father: {fileID: 996759636}
@@ -22476,6 +22672,7 @@ GameObject:
   - component: {fileID: 1659632579}
   - component: {fileID: 1659632580}
   - component: {fileID: 1659632581}
+  - component: {fileID: 1659632582}
   m_Layer: 0
   m_Name: Bully Leader
   m_TagString: Untagged
@@ -22493,7 +22690,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 41.902843, y: 44.31536, z: 1719.7405}
   m_LocalScale: {x: 2.8, y: 3, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 851745034}
   m_Father: {fileID: 1877437284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22586,6 +22784,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.60990953, y: 1.0306188}
   m_EdgeRadius: 0
+--- !u!95 &1659632582
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659632577}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57c7e2aff803a354b9aa0105c973ff5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1672798741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 125850, guid: 58ac37417e60e534f91138088a3e6f70,
@@ -65042,6 +65259,7 @@ GameObject:
   - component: {fileID: 1958365498}
   - component: {fileID: 1958365497}
   - component: {fileID: 1958365496}
+  - component: {fileID: 1958365499}
   m_Layer: 0
   m_Name: Teen Bully Trigger
   m_TagString: Untagged
@@ -65157,6 +65375,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1958365499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958365495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79c7719e6566674b8c4d70a6fc32d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagMask:
+    m_tags:
+    - Player
+  m_onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1958365495}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1968827372
 GameObject:
   m_ObjectHideFlags: 0
@@ -65698,7 +65948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026221928}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.15, y: 12.08, z: -166.54883}
+  m_LocalPosition: {x: -6.15, y: 12.08, z: 0}
   m_LocalScale: {x: 0.625, y: 0.58823526, z: 1}
   m_Children: []
   m_Father: {fileID: 996759636}
@@ -66225,7 +66475,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111116755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.6, y: 12.08, z: -166.54883}
+  m_LocalPosition: {x: -7.6, y: 12.08, z: 0}
   m_LocalScale: {x: 0.625, y: 0.58823526, z: 1}
   m_Children: []
   m_Father: {fileID: 996759636}

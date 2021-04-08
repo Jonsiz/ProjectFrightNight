@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player_DownB
+  m_Name: Right_Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 6384087379767064079, guid: 8bdf486265635a8499929a6ef4edfae8,
-        type: 3}
-    - time: 0.25
-      value: {fileID: 6384087379767064079, guid: 8bdf486265635a8499929a6ef4edfae8,
-        type: 3}
-    - time: 0.5
-      value: {fileID: 4069858906887523983, guid: 8bdf486265635a8499929a6ef4edfae8,
-        type: 3}
-    - time: 0.75
-      value: {fileID: 8277058779646395730, guid: 8bdf486265635a8499929a6ef4edfae8,
+      value: {fileID: 125045454396024116, guid: c70d4de94fae1504186884a456504919,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -50,16 +41,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 6384087379767064079, guid: 8bdf486265635a8499929a6ef4edfae8, type: 3}
-    - {fileID: 6384087379767064079, guid: 8bdf486265635a8499929a6ef4edfae8, type: 3}
-    - {fileID: 4069858906887523983, guid: 8bdf486265635a8499929a6ef4edfae8, type: 3}
-    - {fileID: 8277058779646395730, guid: 8bdf486265635a8499929a6ef4edfae8, type: 3}
+    - {fileID: 125045454396024116, guid: c70d4de94fae1504186884a456504919, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -78,18 +66,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.25
-    functionName: FootSteps
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.75
-    functionName: FootSteps
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

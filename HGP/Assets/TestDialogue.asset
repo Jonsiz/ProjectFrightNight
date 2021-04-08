@@ -3326,8 +3326,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 465.0843
-        y: 725.8097
+        x: 463.86475
+        y: 724.59015
         width: 160
         height: 30
     - id: 31
@@ -3602,8 +3602,8 @@ MonoBehaviour:
         y: 379.56326
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.8500004
+    canvasScrollPosition: {x: 121.60689, y: 497.07294}
+    canvasZoom: 0.8200004
   - id: 3
     fields:
     - title: Title
@@ -16271,8 +16271,8 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == true and (CurrentQuestEntryState("Look
-        for mother", 3) == "success")
+      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
+        for mother", 1) == "active")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16326,13 +16326,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'MoveTo(Child Approach Target,Child_1,2.5);
+        value: 'SetActive(Bully Camera,true);
 
-          AnimatorPlay(Player_UpB,Child_1);
+          SwitchCamera(Bully Camera);
 
-          AnimatorFloat(Speed,0,Child_1);
+          MoveTo(Child
+          Approach Target,Child_1,1.5);
 
-          AnimatorPlay(Player_IdleB,Child_1)@2.5;'
+          AnimatorFloat(Speed,0,Child_1)@1.5;
+
+          AnimatorPlay(Player_Up_IdleB,Child_1)@1.5;
+
+          SwitchCamera(Main
+          Camera)@3;'
         type: 0
         typeString: 
       conversationID: 35
@@ -16349,8 +16355,8 @@ MonoBehaviour:
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
-        for mother", 1) == "active")
+      conditionsString: Variable["PickedUpConsole"] == true and (CurrentQuestEntryState("Look
+        for mother", 3) == "success")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16358,7 +16364,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 104
+        y: 102.90109
         width: 160
         height: 30
     - id: 3
@@ -16784,7 +16790,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 152.4375
+        y: 148.1368
         width: 160
         height: 30
     - id: 9
@@ -16830,7 +16836,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AnimatorPlay(Player_UpB,Child_1);
+        value: 'AnimatorPlay(Forward_Idle,Bully Kid2);
+
+          SwitchCamera(Bully
+          Camera);
+
+          Delay(3);'
         type: 0
         typeString: 
       conversationID: 35
@@ -16855,7 +16866,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 204
+        y: 201.26175
         width: 160
         height: 30
     - id: 10
@@ -16901,7 +16912,20 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'SwitchCamera(Main Camera);
+
+          MoveTo(Teen Step Forward Target,Bully
+          Leader,1);
+
+          AnimatorPlay(FORWARD,Bully Leader);
+
+          AnimatorPlay(Left_Idle,Bully
+          Leader)@1;
+
+          AnimatorPlay(Player_Right_IdleB,Child_1)@1;
+
+          SetActive(Bully
+          Camera,false)@3;'
         type: 0
         typeString: 
       conversationID: 35
@@ -16925,8 +16949,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
-        y: 254
+        x: 406.49255
+        y: 252.36066
         width: 160
         height: 30
     - id: 11
@@ -17043,7 +17067,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'AnimatorPlay(Forward_Idle,Bully Kid1);
+
+          Delay(3);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17138,8 +17164,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
-        y: 405
+        x: 403.36066
+        y: 400.08197
         width: 160
         height: 30
     - id: 14
@@ -17210,7 +17236,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 453.36066
+        y: 451.7213
         width: 160
         height: 30
     - id: 15
@@ -17258,6 +17284,11 @@ MonoBehaviour:
       - title: Sequence
         value: 'MoveTo(Teen Push Target,Bully Leader,1.2);
 
+          AnimatorPlay(LEFT,Bully
+          Leader);
+
+          AnimatorPlay(Left_Idle,Bully Leader)@1.2;
+
           Delay(2.5);'
         type: 0
         typeString: 
@@ -17283,7 +17314,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 503.5714
+        y: 498.65326
         width: 160
         height: 30
     - id: 16
@@ -17329,7 +17360,13 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: MoveTo(Child Fall Target,Child_1,0.2);
+        value: 'AnimatorPlay(SHOVE,Bully Leader);
+
+          MoveTo(Child Fall Target,Child_1,0.2)@0.5;
+
+          AnimatorPlay(Child_Fall,Child_1)@0.5;
+
+          Delay(1);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17354,7 +17391,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 555
+        y: 551.7213
         width: 160
         height: 30
     - id: 17
@@ -17400,7 +17437,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'AnimatorPlay(Left_Idle,Bully Leader);
+
+          AnimatorPlay(Child_Scared,Child_1);
+
+          Delay(3);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17424,8 +17465,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
-        y: 605
+        x: 406.63934
+        y: 603.3606
         width: 160
         height: 30
     - id: 18
@@ -17471,7 +17512,14 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'MoveTo(Teen Pickup Target,Bully Leader,0.2);
+
+          AnimatorPlay(LEFT,Bully
+          Leader);
+
+          AnimatorPlay(Left_Idle,Bully Leader)@0.8;
+
+          Delay(3);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17495,7 +17543,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
+        x: 406.63934
         y: 655
         width: 160
         height: 30
@@ -17542,7 +17590,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'AnimatorPlay(SecurityRightIdle,Elevator Security);
+
+          Delay(2);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17567,7 +17617,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 705
+        y: 703.36066
         width: 160
         height: 30
     - id: 20
@@ -17613,7 +17663,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: Delay(1.5);
         type: 0
         typeString: 
       conversationID: 35
@@ -17637,8 +17687,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
-        y: 755
+        x: 406.63934
+        y: 753.0769
         width: 160
         height: 30
     - id: 21
@@ -17687,10 +17737,19 @@ MonoBehaviour:
         value: 'MoveTo(Teen Runaway Target,Bully Leader,3);
 
           MoveTo(Teen
-          Runaway Target,Bully Kid1,3);
+          Runaway Target,Bully Kid1,3)@0.2;
 
           MoveTo(Teen Runaway Target,Bully
-          Kid2,3);'
+          Kid2,3)@0.3;
+
+          AnimatorPlay(FORWARD,Bully Leader);
+
+          AnimatorPlay(FORWARD,Bully
+          Kid1)@0.2;
+
+          AnimatorPlay(FORWARD,Bully Kid2)@0.3;
+
+          Delay(3);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17714,8 +17773,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
-        y: 805
+        x: 406.92307
+        y: 803.07697
         width: 160
         height: 30
     - id: 22
@@ -17761,7 +17820,15 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: MoveTo(Guard Approach Target,Elevator Security,2.5);
+        value: 'MoveTo(Guard Approach Target,Elevator Security,2.5);
+
+          AnimatorPlay(SecurityRight,Elevator
+          Security);
+
+          AnimatorPlay(SecurityIdle,Elevator Security)@2.5;
+
+          AnimatorPlay(SecurityRightIdle,Elevator
+          Security)@3.5;'
         type: 0
         typeString: 
       conversationID: 35
@@ -17786,7 +17853,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 855
+        y: 849.3967
         width: 160
         height: 30
     - id: 23
@@ -17857,7 +17924,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 905
+        y: 902.9592
         width: 160
         height: 30
     - id: 24
@@ -17903,7 +17970,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AnimatorPlay(Player_IdleB,Child_1);
         type: 0
         typeString: 
       conversationID: 35
@@ -18062,7 +18129,7 @@ MonoBehaviour:
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6400002
+    canvasZoom: 0.8200004
   - id: 36
     fields:
     - title: Title
