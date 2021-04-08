@@ -16328,11 +16328,9 @@ MonoBehaviour:
       - title: Sequence
         value: 'MoveTo(Child Approach Target,Child_1,2.5);
 
-          AnimatorPlay(Player_UpB,Child_1);
+          AnimatorFloat(Speed,0,Child_1)@2.5;
 
-          AnimatorFloat(Speed,0,Child_1);
-
-          AnimatorPlay(Player_IdleB,Child_1)@2.5;'
+          AnimatorPlay(Player_Up_IdleB,Child_1)@2.5;'
         type: 0
         typeString: 
       conversationID: 35
@@ -16784,7 +16782,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 152.4375
+        y: 150.87503
         width: 160
         height: 30
     - id: 9
@@ -16830,7 +16828,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AnimatorPlay(Player_UpB,Child_1);
+        value: 
         type: 0
         typeString: 
       conversationID: 35
@@ -16925,7 +16923,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
+        x: 406.49255
         y: 254
         width: 160
         height: 30
@@ -17210,7 +17208,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 453.36066
+        y: 451.7213
         width: 160
         height: 30
     - id: 15
@@ -18061,8 +18059,8 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6400002
+    canvasScrollPosition: {x: 0, y: 231.14746}
+    canvasZoom: 0.61000025
   - id: 36
     fields:
     - title: Title

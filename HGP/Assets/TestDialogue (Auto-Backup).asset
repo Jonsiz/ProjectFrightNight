@@ -16326,7 +16326,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: MoveTo(Child Approach Target,Child_1,2.5);
+        value: 'MoveTo(Child Approach Target,Child_1,2.5);
+
+          AnimatorFloat(Speed,0,Child_1)@2.5;
+
+          AnimatorPlay(Player_IdleB,Child_1)@2.5;'
         type: 0
         typeString: 
       conversationID: 35
@@ -16778,7 +16782,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 154
+        y: 152.4375
         width: 160
         height: 30
     - id: 9
@@ -16824,7 +16828,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AnimatorPlay(Player_UpB,Child_1);
         type: 0
         typeString: 
       conversationID: 35

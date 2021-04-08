@@ -22476,6 +22476,7 @@ GameObject:
   - component: {fileID: 1659632579}
   - component: {fileID: 1659632580}
   - component: {fileID: 1659632581}
+  - component: {fileID: 1659632582}
   m_Layer: 0
   m_Name: Bully Leader
   m_TagString: Untagged
@@ -22586,6 +22587,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.60990953, y: 1.0306188}
   m_EdgeRadius: 0
+--- !u!95 &1659632582
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659632577}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57c7e2aff803a354b9aa0105c973ff5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1672798741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 125850, guid: 58ac37417e60e534f91138088a3e6f70,
