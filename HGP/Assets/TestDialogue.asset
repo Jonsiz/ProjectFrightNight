@@ -3326,8 +3326,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 465.0843
-        y: 725.8097
+        x: 463.86475
+        y: 724.59015
         width: 160
         height: 30
     - id: 31
@@ -3602,8 +3602,8 @@ MonoBehaviour:
         y: 379.56326
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.8500004
+    canvasScrollPosition: {x: 121.60689, y: 497.07294}
+    canvasZoom: 0.8200004
   - id: 3
     fields:
     - title: Title
@@ -16271,8 +16271,8 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == true and (CurrentQuestEntryState("Look
-        for mother", 3) == "success")
+      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
+        for mother", 1) == "active")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16326,11 +16326,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'MoveTo(Child Approach Target,Child_1,1.5);
+        value: 'SetActive(Bully Camera,true);
+
+          SwitchCamera(Bully Camera);
+
+          MoveTo(Child
+          Approach Target,Child_1,1.5);
 
           AnimatorFloat(Speed,0,Child_1)@1.5;
 
-          AnimatorPlay(Player_Up_IdleB,Child_1)@1.5;'
+          AnimatorPlay(Player_Up_IdleB,Child_1)@1.5;
+
+          SwitchCamera(Main
+          Camera)@3;'
         type: 0
         typeString: 
       conversationID: 35
@@ -16347,8 +16355,8 @@ MonoBehaviour:
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
-        for mother", 1) == "active")
+      conditionsString: Variable["PickedUpConsole"] == true and (CurrentQuestEntryState("Look
+        for mother", 3) == "success")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16356,7 +16364,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 104
+        y: 102.90109
         width: 160
         height: 30
     - id: 3
@@ -16782,7 +16790,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 149.23569
+        y: 148.1368
         width: 160
         height: 30
     - id: 9
@@ -16830,6 +16838,9 @@ MonoBehaviour:
       - title: Sequence
         value: 'AnimatorPlay(Forward_Idle,Bully Kid2);
 
+          SwitchCamera(Bully
+          Camera);
+
           Delay(3);'
         type: 0
         typeString: 
@@ -16855,7 +16866,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 202.36066
+        y: 201.26175
         width: 160
         height: 30
     - id: 10
@@ -16901,14 +16912,20 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'MoveTo(Teen Step Forward Target,Bully Leader,1);
+        value: 'SwitchCamera(Main Camera);
 
-          AnimatorPlay(FORWARD,Bully
-          Leader);
+          MoveTo(Teen Step Forward Target,Bully
+          Leader,1);
 
-          AnimatorPlay(Left_Idle,Bully Leader)@1;
+          AnimatorPlay(FORWARD,Bully Leader);
 
-          AnimatorPlay(Player_Right_IdleB,Child_1)@1;'
+          AnimatorPlay(Left_Idle,Bully
+          Leader)@1;
+
+          AnimatorPlay(Player_Right_IdleB,Child_1)@1;
+
+          SetActive(Bully
+          Camera,false)@3;'
         type: 0
         typeString: 
       conversationID: 35
@@ -17495,12 +17512,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'MoveTo(Child Approach Target,Bully Leader,0.2);
+        value: 'MoveTo(Teen Pickup Target,Bully Leader,0.2);
 
           AnimatorPlay(LEFT,Bully
           Leader);
 
-          AnimatorPlay(Left_Idle,Bully Leader)@0.2;
+          AnimatorPlay(Left_Idle,Bully Leader)@0.8;
 
           Delay(3);'
         type: 0
@@ -18111,8 +18128,8 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 342.88773}
-    canvasZoom: 0.49000034
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.8200004
   - id: 36
     fields:
     - title: Title
