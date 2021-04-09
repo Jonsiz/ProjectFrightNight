@@ -932,7 +932,7 @@ MonoBehaviour:
       type: 1
       typeString: CustomFieldType_Number
     - title: Entry 1 State
-      value: active
+      value: unassigned
       type: 0
       typeString: 
     - title: Entry 1
@@ -947,6 +947,10 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: 
+      type: 0
+      typeString: 
   - id: 5
     fields:
     - title: Name
@@ -2452,10 +2456,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'SetQuestState("Find shirt", "active");
+      userScript: '
 
-        SetQuestEntryState("Leave
-        Store", 7, "success")'
+'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3094,7 +3097,7 @@ MonoBehaviour:
         priority: 2
       conditionsString: Variable["Found_Shirt"] == false  and (CurrentQuestEntryState("Leave
         Store", 7) == "active")
-      userScript: 
+      userScript: SetQuestEntryState("Leave Store", 7, "success")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3481,11 +3484,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 3
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3527,7 +3530,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: SetQuestState("Find shirt", "active")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3552,7 +3555,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 3
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3598,11 +3601,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 255.10959
-        y: 379.56326
+        x: 250.23154
+        y: 399.07547
         width: 160
         height: 30
-    canvasScrollPosition: {x: 121.60689, y: 497.07294}
+    canvasScrollPosition: {x: 0, y: 92.19504}
     canvasZoom: 0.8200004
   - id: 3
     fields:
@@ -4079,7 +4082,10 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: CurrentQuestEntryState("Leave Store", 6) == "active"
+      conditionsString: CurrentQuestEntryState("Leave Store", 6) == "active" and
+        (CurrentQuestEntryState("Leave Store", 2) == "success") and (CurrentQuestEntryState("Leave
+        Store", 3) == "success") and (CurrentQuestEntryState("Leave Store", 4) ==
+        "success") and (CurrentQuestEntryState("Leave Store", 5) == "success")
       userScript: SetQuestEntryState("Leave Store", 1, "success")
       onExecute:
         m_PersistentCalls:
@@ -4256,7 +4262,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Where do you think your going kid?
+        value: Where do you think you're going kid?
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4289,7 +4295,8 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
-      conditionsString: CurrentQuestState("Leave Store") == "active"
+      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "unassigned"
+        and (CurrentQuestEntryState("Leave Store", 6) == "unassigned")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -7285,12 +7292,6 @@ MonoBehaviour:
       - originConversationID: 12
         originDialogueID: 0
         destinationConversationID: 12
-        destinationDialogueID: 2
-        isConnector: 0
-        priority: 2
-      - originConversationID: 12
-        originDialogueID: 0
-        destinationConversationID: 12
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
@@ -7378,71 +7379,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 452.51428
         y: 143.57144
-        width: 160
-        height: 30
-    - id: 2
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: There's nothing interesting here.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
-        type: 0
-        typeString: 
-      conversationID: 12
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 'Variable["CheckedRack1"] == true '
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 25
-        y: 148
         width: 160
         height: 30
     - id: 3
@@ -10706,8 +10642,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 486
-        y: 153
+        x: 486.91748
+        y: 153.91742
         width: 160
         height: 30
     - id: 6
