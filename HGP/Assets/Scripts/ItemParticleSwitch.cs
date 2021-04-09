@@ -10,12 +10,17 @@ public class ItemParticleSwitch : MonoBehaviour
     private Usable usable;
     [SerializeField]
     private float waitTime = 15;
-    
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip clip;
     //private float fadeSpeed = 0.001f;
     //private float fadeTarget = 0;
 
     private void Awake()
     {
+        source = GetComponent<AudioSource>();
+        source.clip = clip;
         particle = GetComponentInChildren<ParticleSystem>();
         usable = GetComponent<Usable>();
         particle.GetComponent<Renderer>().sortingOrder = 32000;
@@ -54,6 +59,8 @@ public class ItemParticleSwitch : MonoBehaviour
 
     public void ParticleOff()
     {
+        source.loop = false;
+        source.Stop();
         particle.Stop();
         //fadeTarget = 0.0f;
     }
@@ -61,7 +68,8 @@ public class ItemParticleSwitch : MonoBehaviour
     IEnumerator WaitTime()
     {
         yield return new WaitForSeconds(waitTime);
-
+        source.loop = true;
+        source.Play();
         particle.Play();
         //fadeTarget = 1.0f;
     }
