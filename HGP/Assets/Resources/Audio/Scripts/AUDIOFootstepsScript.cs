@@ -5,10 +5,13 @@ using UnityEngine;
 public class AUDIOFootstepsScript : MonoBehaviour
 {
 
-
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip[] footstepclip;
     void Start()
     {
-       
+        source.clip = footstepclip[Random.Range(0, footstepclip.Length)];
     }
 
     // Update is called once per frame
@@ -20,6 +23,7 @@ public class AUDIOFootstepsScript : MonoBehaviour
 
     public void FootSteps()
     {
-            FindObjectOfType<AudioManager>().Play("Player_Footstep");
+        if (!source.isPlaying)
+            source.PlayOneShot(source.clip);
     }
 }
