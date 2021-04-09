@@ -86899,6 +86899,21 @@ PrefabInstance:
       propertyPath: instructionText
       value: 
       objectReference: {fileID: 509613038}
+    - target: {fileID: 494388120330346570, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 5056646923755328739}
+    - target: {fileID: 494388120330346570, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: clothingRackEnter
+      value: 
+      objectReference: {fileID: 8300000, guid: b770a0daf25350c49b9b7434dc11d883, type: 3}
+    - target: {fileID: 494388120330346570, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: clothingRackexit
+      value: 
+      objectReference: {fileID: 8300000, guid: 3760dd95859e39a4fb0a999826305a51, type: 3}
     - target: {fileID: 3191331775796844422, guid: c39879fcba8aa1b45b80c5ac0da6f128,
         type: 3}
       propertyPath: checkpoint
