@@ -8,10 +8,14 @@ public class AUDIOFootstepsScript : MonoBehaviour
     [SerializeField]
     AudioSource source;
     [SerializeField]
-    AudioClip[] footstepclip;
+    AudioClip[] concretefootstepclip;
+    [SerializeField] 
+    AudioClip[] carpetFootstepClip;
+    string material;
     void Start()
     {
-        source.clip = footstepclip[Random.Range(0, footstepclip.Length)];
+        material = "concrete";
+        
     }
 
     // Update is called once per frame
@@ -23,7 +27,28 @@ public class AUDIOFootstepsScript : MonoBehaviour
 
     public void FootSteps()
     {
-        if (!source.isPlaying)
+        if (!source.isPlaying && material == "concrete") 
+        { 
+        source.clip = concretefootstepclip[Random.Range(0, concretefootstepclip.Length)];
+        source.PlayOneShot(source.clip); 
+        }
+        if (!source.isPlaying && material == "carpet")
+        {
+            source.clip = carpetFootstepClip[Random.Range(0, carpetFootstepClip.Length)];
             source.PlayOneShot(source.clip);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Aud_Carpet")
+            material = "carpet";
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Aud_Carpet")
+        {
+            material = "concrete";
+        }
     }
 }
