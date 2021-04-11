@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
     private float prevX;
     private float prevY;
     private bool hidden = false;
+    public AudioClip[] panting;
+    public AudioSource source;
     public bool Hidden
     {
         get {return hidden;}
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        source = GetComponent<AudioSource>();
         playerAnimator = GetComponent<Animator>();
         rBD2D = GetComponent<Rigidbody2D>();
         stamina = maxStamina;
@@ -107,6 +110,8 @@ public class PlayerController : MonoBehaviour
         else
         //If the player is exhausted, the player's speed is halfed and they start getting their stamina back.
         {
+            if(!source.isPlaying)
+            source.PlayOneShot(panting[Random.Range(0, panting.Length)]);
             sprintSpeed = 0.5f;
             stamina += staminaGain;
             //This caps it off at the max stamina

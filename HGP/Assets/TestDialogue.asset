@@ -3775,7 +3775,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/CS_SG_Question/sfx_frightNight_child_cs_sg_question_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -7349,7 +7349,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -7650,7 +7650,7 @@ MonoBehaviour:
         y: 220.30096
         width: 160
         height: 30
-    canvasScrollPosition: {x: 22.330063, y: 23.300964}
+    canvasScrollPosition: {x: 68.849464, y: 30.726513}
     canvasZoom: 1.03
   - id: 13
     fields:
@@ -7820,7 +7820,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 13
@@ -7885,7 +7885,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});;
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_02);Delay({{end}});;
         type: 0
         typeString: 
       conversationID: 13
@@ -7960,7 +7960,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 13
@@ -8608,7 +8608,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 15
@@ -9899,7 +9899,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 20
@@ -10484,7 +10484,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});)
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_02);Delay({{end}});)
         type: 0
         typeString: 
       conversationID: 22
@@ -10549,7 +10549,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 22
@@ -10615,7 +10615,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: AudioWait(Audio/Mixed/Dialogue/CS_CR_Search_Sigh/sfx_frightNight_child_cs_cr_search_sigh_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 22
