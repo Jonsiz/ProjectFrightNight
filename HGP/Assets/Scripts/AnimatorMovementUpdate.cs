@@ -19,7 +19,7 @@ public class AnimatorMovementUpdate : MonoBehaviour
 
         animator = GetComponent<Animator>();
     }
-    void FixedUpdate()
+    void Update()
     {
         xSpeed = transform.position.x - prevX;
         ySpeed = transform.position.y - prevY;
