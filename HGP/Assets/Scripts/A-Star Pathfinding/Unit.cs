@@ -63,17 +63,17 @@ public class Unit : MonoBehaviour
         }
 
         //The code below calculates the speed the enemy is moving in order to inform Unity's animator.
-        xSpeed = transform.position.x - prevX;
-        ySpeed = transform.position.y - prevY;
+        //xSpeed = transform.position.x - prevX;
+        //ySpeed = transform.position.y - prevY;
 
-        prevX = transform.position.x;
-        prevY = transform.position.y;
+        //prevX = transform.position.x;
+        //prevY = transform.position.y;
 
-        Vector2 magnitude = new Vector2(xSpeed, ySpeed);
+        //Vector2 magnitude = new Vector2(xSpeed, ySpeed);
 
-        enemyAnimator.SetFloat("HorizontalMovement", xSpeed);
-        enemyAnimator.SetFloat("VerticalMovement", ySpeed);
-        enemyAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
+        //enemyAnimator.SetFloat("Horizontal", xSpeed);
+        //enemyAnimator.SetFloat("Vertical", ySpeed);
+        //enemyAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
     }
 
     public void OnPathFound(Vector3[] newPath, bool pathSuccessful)

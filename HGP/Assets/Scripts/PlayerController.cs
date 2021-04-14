@@ -140,17 +140,17 @@ public class PlayerController : MonoBehaviour
         //The following code calculates the player's movement for Unity's animator (it is done this way to compensate for cases where
         //the player is being automatically moved, such as when they're moving to a hiding position.
 
-        xSpeed = transform.position.x - prevX;
-        ySpeed = transform.position.y - prevY;
+        //xSpeed = transform.position.x - prevX;
+        //ySpeed = transform.position.y - prevY;
 
-        prevX = transform.position.x;
-        prevY = transform.position.y;
+        //prevX = transform.position.x;
+        //prevY = transform.position.y;
 
-        Vector2 magnitude = new Vector2(xSpeed, ySpeed);
+        //Vector2 magnitude = new Vector2(xSpeed, ySpeed);
 
-        playerAnimator.SetFloat("Horizontal", xSpeed);
-        playerAnimator.SetFloat("Vertical", ySpeed);
-        playerAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
+        //playerAnimator.SetFloat("Horizontal", xSpeed);
+        //playerAnimator.SetFloat("Vertical", ySpeed);
+        //playerAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
     }
 
     void Update()
