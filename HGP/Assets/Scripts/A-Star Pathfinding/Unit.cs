@@ -16,12 +16,19 @@ public class Unit : MonoBehaviour
     }
 
     [SerializeField]
-    float speed;
+    float chaseSpeed;
+    [SerializeField]
+    float patrolSpeed;
     [SerializeField]
     float maxSpeed;
 
     [SerializeField]
-    Transform[] patrolZones;
+    Transform[] patrolPoints;
+    [SerializeField]
+    bool canPatrol;
+    [SerializeField]
+    private int currentPatrolIndex;
+
     [SerializeField]
     float targetRange;
 
@@ -34,14 +41,14 @@ public class Unit : MonoBehaviour
     private float ySpeed;
     private float prevX;
     private float prevY;
-    private Animator enemyAnimator;
+   // private Animator enemyAnimator;
 
     private PixelCrushers.DialogueSystem.Usable usable;
 
 
     void Awake()
     {
-        enemyAnimator = GetComponent<Animator>();
+       // enemyAnimator = GetComponent<Animator>();
         usable = GetComponent<PixelCrushers.DialogueSystem.Usable>();
     }
 
@@ -58,7 +65,11 @@ public class Unit : MonoBehaviour
             else
             {
                 isChasing = false;
-                StopCoroutine("FollowPath");
+                if (canPatrol)
+                {
+                    PatrolArea();
+                    PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+                }
             }
         }
 
@@ -71,9 +82,9 @@ public class Unit : MonoBehaviour
 
         Vector2 magnitude = new Vector2(xSpeed, ySpeed);
 
-        enemyAnimator.SetFloat("HorizontalMovement", xSpeed);
-        enemyAnimator.SetFloat("VerticalMovement", ySpeed);
-        enemyAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
+       // enemyAnimator.SetFloat("HorizontalMovement", xSpeed);
+       // enemyAnimator.SetFloat("VerticalMovement", ySpeed);
+       // enemyAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
     }
 
     public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
@@ -104,23 +115,31 @@ public class Unit : MonoBehaviour
                 currentWaypoint = path[targetIndex];
             }
 
-            transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, speed * Time.deltaTime);
+            float currentSpeed;
+
+            if (isChasing)
+                currentSpeed = chaseSpeed;
+            else
+                currentSpeed = patrolSpeed;
+
+            transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, currentSpeed * Time.deltaTime);
             yield return null;
         }
     }
 
-    /*public void PatrolArea()
+    public void PatrolArea()
     {
-        for (int i = 0; i < patrolZones.Length; i++)
+        if (Vector2.Distance(transform.position, patrolPoints[currentPatrolIndex].position) < 5f)
         {
-            target = patrolZones[i];
 
-            while (transform.position != target.position)
-            {
-                PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
-            }
+            if (currentPatrolIndex >= patrolPoints.Length - 1)
+                currentPatrolIndex = 0;
+            else
+                currentPatrolIndex++;
         }
-    }*/
+
+        target = patrolPoints[currentPatrolIndex].transform;
+    }
 
     public bool CanFindPlayer()
     {
