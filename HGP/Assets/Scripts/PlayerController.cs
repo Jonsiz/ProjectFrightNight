@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
     private float prevX;
     private float prevY;
     private bool hidden = false;
+    public AudioClip[] panting;
+    public AudioSource source;
     public bool Hidden
     {
         get {return hidden;}
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        source = GetComponent<AudioSource>();
         playerAnimator = GetComponent<Animator>();
         rBD2D = GetComponent<Rigidbody2D>();
         stamina = maxStamina;
@@ -107,6 +110,8 @@ public class PlayerController : MonoBehaviour
         else
         //If the player is exhausted, the player's speed is halfed and they start getting their stamina back.
         {
+            if(!source.isPlaying)
+            source.PlayOneShot(panting[Random.Range(0, panting.Length)]);
             sprintSpeed = 0.5f;
             stamina += staminaGain;
             //This caps it off at the max stamina
@@ -135,17 +140,17 @@ public class PlayerController : MonoBehaviour
         //The following code calculates the player's movement for Unity's animator (it is done this way to compensate for cases where
         //the player is being automatically moved, such as when they're moving to a hiding position.
 
-        xSpeed = transform.position.x - prevX;
-        ySpeed = transform.position.y - prevY;
+        //xSpeed = transform.position.x - prevX;
+        //ySpeed = transform.position.y - prevY;
 
-        prevX = transform.position.x;
-        prevY = transform.position.y;
+        //prevX = transform.position.x;
+        //prevY = transform.position.y;
 
-        Vector2 magnitude = new Vector2(xSpeed, ySpeed);
+        //Vector2 magnitude = new Vector2(xSpeed, ySpeed);
 
-        playerAnimator.SetFloat("Horizontal", xSpeed);
-        playerAnimator.SetFloat("Vertical", ySpeed);
-        playerAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
+        //playerAnimator.SetFloat("Horizontal", xSpeed);
+        //playerAnimator.SetFloat("Vertical", ySpeed);
+        //playerAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
     }
 
     void Update()

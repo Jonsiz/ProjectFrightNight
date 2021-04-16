@@ -28,6 +28,12 @@ public class PlayerHide : MonoBehaviour
     private PlayerController pC;
     [SerializeField]
     private GameObject instructionText;
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    AudioClip clothingRackEnter;
+    [SerializeField]
+    AudioClip clothingRackexit;
 
     void Awake()
     {
@@ -47,7 +53,6 @@ public class PlayerHide : MonoBehaviour
         //If hiding, then the object moves toward teh given position (which is set elswhere in the script)
         if (hiding)
         {
-            
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(newXpos, newYpos), step);
             //rBD2D.MovePosition(Vector2.MoveTowards(transform.position, new Vector2(newXpos,newYpos),step));
         }
@@ -56,7 +61,6 @@ public class PlayerHide : MonoBehaviour
             //This moves the player to the original position they were at before hidign was set to true.
             if (leavingHiding)
             {
-                FindObjectOfType<AudioManager>().Play("CS_ClothingRack_Emerge");
                 //transform.position = new Vector2(originalXpos, originalYpos);
                 Vector2 originalPosition = new Vector2(originalXpos, originalYpos);
                 transform.position = Vector2.MoveTowards(transform.position, originalPosition, step);
@@ -95,6 +99,8 @@ public class PlayerHide : MonoBehaviour
 
                         if (hiding)
                         {
+                            source.clip = clothingRackexit;
+                            source.PlayOneShot(source.clip);
                             hiding = false;
                             leavingHiding = true;
                         }
@@ -104,7 +110,8 @@ public class PlayerHide : MonoBehaviour
                         //must have been a reason for it.
                         else
                         {
-                            FindObjectOfType<AudioManager>().Play("CS_ClothingRack_Hide");
+                            source.clip = clothingRackEnter;
+                            source.PlayOneShot(source.clip);
                             hiding = true;
                             pC.Hidden = true;
                             newXpos = collidingWith.gameObject.transform.position.x;
