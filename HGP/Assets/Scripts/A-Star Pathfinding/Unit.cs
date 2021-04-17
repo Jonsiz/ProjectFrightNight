@@ -28,6 +28,12 @@ public class Unit : MonoBehaviour
     bool canPatrol;
     [SerializeField]
     private int currentPatrolIndex;
+    [SerializeField]
+    private float patrolPointOffset; //Used to set how close the Unit needs to be to the Patrol Point before registering it.
+
+    [SerializeField]
+    private float idleLength;
+    private float timer;
 
     [SerializeField]
     float targetRange;
@@ -50,6 +56,7 @@ public class Unit : MonoBehaviour
     {
        // enemyAnimator = GetComponent<Animator>();
         usable = GetComponent<PixelCrushers.DialogueSystem.Usable>();
+        timer = idleLength;
     }
 
     private void Update()
@@ -60,7 +67,7 @@ public class Unit : MonoBehaviour
             {
                 isChasing = true;
                 target = GameObject.FindGameObjectWithTag("Player").transform;
-                PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+                PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound)); //Remove "new PathRequest" if not using multithreading
             }
             else
             {
@@ -68,7 +75,7 @@ public class Unit : MonoBehaviour
                 if (canPatrol)
                 {
                     PatrolArea();
-                    PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
+                    //PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound)); //Remove "new PathRequest" if not using multithreading
                 }
             }
         }
@@ -129,16 +136,46 @@ public class Unit : MonoBehaviour
 
     public void PatrolArea()
     {
-        if (Vector2.Distance(transform.position, patrolPoints[currentPatrolIndex].position) < 5f)
+
+        if (Vector2.Distance(transform.position, patrolPoints[currentPatrolIndex].position) < patrolPointOffset)
         {
+            StopCoroutine("FollowPath");
 
-            if (currentPatrolIndex >= patrolPoints.Length - 1)
-                currentPatrolIndex = 0;
-            else
-                currentPatrolIndex++;
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else if (timer <= 0)
+            {
+                if (currentPatrolIndex >= patrolPoints.Length - 1)
+                {
+                    currentPatrolIndex = 0;
+                }
+                else
+                {
+                    currentPatrolIndex++;
+                }
+
+                target = patrolPoints[currentPatrolIndex].transform;
+                PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
+                timer = idleLength;
+            }
+
+            Debug.Log(timer.ToString());
         }
+        else
+        {
+            target = patrolPoints[currentPatrolIndex].transform;
+            PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
+        }
+    }
 
-        target = patrolPoints[currentPatrolIndex].transform;
+    public void Idle()
+    {
+        if (idleLength > 0)
+        {
+            idleLength -= Time.deltaTime;
+        }
     }
 
     public bool CanFindPlayer()
