@@ -146,6 +146,8 @@ public class PlayerController : MonoBehaviour
         prevX = transform.position.x;
         prevY = transform.position.y;
 
+        GetComponent<AnimatorMovementUpdate>().AnimationUpdate();
+
         //Vector2 magnitude = new Vector2(xSpeed, ySpeed);
 
         //playerAnimator.SetFloat("Horizontal", xSpeed);
