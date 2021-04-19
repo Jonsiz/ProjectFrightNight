@@ -27,7 +27,9 @@ GameObject:
   - component: {fileID: 3191331775796844418}
   - component: {fileID: 3191331775796844417}
   - component: {fileID: 3191331775796844422}
-  m_Layer: 0
+  - component: {fileID: -6395901733001024462}
+  - component: {fileID: 5056646923755328756}
+  m_Layer: 12
   m_Name: Child_1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -201,7 +203,7 @@ MonoBehaviour:
   guiSkin: {fileID: 11400000, guid: 29245abd9e583b5409a4aeadfdf5e11f, type: 2}
   guiStyleName: label
   alignment: 1
-  color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  color: {r: 0, g: 0, b: 0, a: 1}
   textStyle: 1
   textStyleColor: {r: 0, g: 0, b: 0, a: 1}
   defaultUseMessage: (spacebar to interact)
@@ -280,7 +282,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
     onConversationEnd:
       m_PersistentCalls:
@@ -457,6 +459,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hideSpeed: 15
   instructionText: {fileID: 0}
+  source: {fileID: 3191331775796844445}
+  clothingRackEnter: {fileID: 8300000, guid: b770a0daf25350c49b9b7434dc11d883, type: 3}
+  clothingRackexit: {fileID: 8300000, guid: 3760dd95859e39a4fb0a999826305a51, type: 3}
 --- !u!95 &7666589751734916100
 Animator:
   serializedVersion: 3
@@ -489,11 +494,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  sprint: 2
+  sprint: 1.25
   maxStamina: 5
   staminaDrain: 0.1
   staminaGain: 0.2
   staminaEnergyPercentage: 0.2
+  panting:
+  - {fileID: 8300000, guid: ddb87768498ac064ba8a00766e2dd2e9, type: 3}
+  - {fileID: 8300000, guid: 5c80def4ff3617546ba28783a8f9bfe7, type: 3}
+  - {fileID: 8300000, guid: 1bf6d3a93dbc1be4c8003a338bd0d9b5, type: 3}
+  - {fileID: 8300000, guid: c746fa0eea4ae0a46be95c0f708a1381, type: 3}
+  source: {fileID: 3191331775796844445}
 --- !u!82 &3191331775796844445
 AudioSource:
   m_ObjectHideFlags: 0
@@ -503,7 +514,8 @@ AudioSource:
   m_GameObject: {fileID: 7666589751734918129}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8237271360672233786, guid: fce3c36ecdbe2c048b2746ea7a99c269,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -628,6 +640,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c501a49823eac747930832ebbe0a9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 5056646923755328756}
+  concretefootstepclip:
+  - {fileID: 8300000, guid: f9f586d1d64907349a40c2aaad8da6d0, type: 3}
+  - {fileID: 8300000, guid: 8b02491a6636d7347b5cd3db5fe81a2c, type: 3}
+  - {fileID: 8300000, guid: 3afe3c545818bc9429edeb9783442033, type: 3}
+  - {fileID: 8300000, guid: 43de2cd0f704bd745921d5950f7035f7, type: 3}
+  - {fileID: 8300000, guid: 2f487345a4bed174b9872d401518117e, type: 3}
+  carpetFootstepClip:
+  - {fileID: 8300000, guid: d52729db1bea36e48b3922962c5643e1, type: 3}
+  - {fileID: 8300000, guid: 1ac364097a5754d41a821c2e655f23a3, type: 3}
+  - {fileID: 8300000, guid: 7711640a4ca5fcf4baea8685b6cfe4bc, type: 3}
+  - {fileID: 8300000, guid: 92d3d2353bc795d45bfe324bf5fc047a, type: 3}
 --- !u!114 &3191331775796844418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +745,115 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 0}
+--- !u!114 &-6395901733001024462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666589751734918129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b039e1b4d435d59439771b159831afe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &5056646923755328756
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666589751734918129}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 5242336197770400836, guid: fce3c36ecdbe2c048b2746ea7a99c269,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7666589752060684920
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7666589752060684919}
   - component: {fileID: 7666589752060684918}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

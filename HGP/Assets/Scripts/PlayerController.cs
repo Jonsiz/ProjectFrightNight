@@ -146,11 +146,11 @@ public class PlayerController : MonoBehaviour
         prevX = transform.position.x;
         prevY = transform.position.y;
 
-        Vector2 magnitude = new Vector2(xSpeed, ySpeed);
+        //Vector2 magnitude = new Vector2(xSpeed, ySpeed);
 
-        playerAnimator.SetFloat("Horizontal", xSpeed);
-        playerAnimator.SetFloat("Vertical", ySpeed);
-        playerAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
+        //playerAnimator.SetFloat("Horizontal", xSpeed);
+        //playerAnimator.SetFloat("Vertical", ySpeed);
+        //playerAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
     }
 
     void Update()
