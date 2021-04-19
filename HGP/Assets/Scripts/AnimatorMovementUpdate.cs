@@ -11,6 +11,8 @@ public class AnimatorMovementUpdate : MonoBehaviour
     private float prevX;
     private float prevY;
 
+    private bool slice = true;
+
     private Animator animator;
     void Awake()
     {
@@ -21,11 +23,16 @@ public class AnimatorMovementUpdate : MonoBehaviour
     }
     void Update()
     {
-        xSpeed = transform.position.x - prevX;
-        ySpeed = transform.position.y - prevY;
+        if (slice)
+        {
+            xSpeed = transform.position.x - prevX;
+            ySpeed = transform.position.y - prevY;
 
-        prevX = transform.position.x;
-        prevY = transform.position.y;
+            prevX = transform.position.x;
+            prevY = transform.position.y;
+        }
+
+        slice = !slice;
 
         Vector2 magnitude = new Vector2(xSpeed, ySpeed);
 

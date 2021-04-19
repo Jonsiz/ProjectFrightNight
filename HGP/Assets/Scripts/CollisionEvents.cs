@@ -14,13 +14,15 @@ public class CollisionEvents : MonoBehaviour
         if (collision.gameObject.tag=="Exit")
         {
             SceneManager.LoadScene("Chris_Main_Menu");
-            Debug.Log("Exit");
+            //Debug.Log("Exit");
         }
         else if (collision.gameObject.tag == "GameOver")
         {
             //Application.Quit();
-            Debug.Log("GameOver");
+            //Debug.Log("GameOver");
             //PixelCrushers.SaveSystem.LoadFromSlot(1);
+            GetComponent<PlayerController>().enabled = false;
+            collision.gameObject.GetComponent<Unit>().enabled = false;
             GameObject.Find("SaveAndLoadObject").GetComponent<SaveAndLoadManager>().LoadingdaGame();
         }
     }
