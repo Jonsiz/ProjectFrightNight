@@ -3677,8 +3677,8 @@ MonoBehaviour:
         y: 399.07547
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1.2658386, y: 2.5316772}
-    canvasZoom: 0.7900005
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.61000067
   - id: 3
     fields:
     - title: Title
@@ -14699,7 +14699,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 235
-        y: 81
+        y: 80
         width: 160
         height: 30
     - id: 5
@@ -16085,7 +16085,9 @@ MonoBehaviour:
           SetActive(Bratty Kid,false);
 
           SetActive(Teen
-          Bully Trigger);'
+          Bully Trigger);
+
+          Delay(2.5);'
         type: 0
         typeString: 
       conversationID: 34
@@ -16100,14 +16102,16 @@ MonoBehaviour:
       userScript: 'SetQuestEntryState("Look for mother", 4, "active");
 
         SetQuestEntryState("Look
-        for mother", 3, "success")'
+        for mother", 3, "success");
+
+        Variable["PickedUpConsole"] = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 77.96907
+        y: 76.96907
         width: 160
         height: 30
     - id: 2
@@ -16515,7 +16519,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 102.90109
+        y: 99.9599
         width: 160
         height: 30
     - id: 3
@@ -18075,7 +18079,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 902.9592
+        y: 900.018
         width: 160
         height: 30
     - id: 24
@@ -18121,7 +18125,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AnimatorPlay(Player_IdleB,Child_1);
+        value: 'AnimatorPlay(Player_IdleB,Child_1);
+
+          SetActive(Bully Camera,true);'
         type: 0
         typeString: 
       conversationID: 35
@@ -18279,8 +18285,8 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 224.99979}
-    canvasZoom: 0.6400006
+    canvasScrollPosition: {x: 102.56875, y: 621.4391}
+    canvasZoom: 0.54999995
   - id: 36
     fields:
     - title: Title
