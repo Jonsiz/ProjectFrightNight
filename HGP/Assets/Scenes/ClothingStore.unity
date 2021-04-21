@@ -77749,6 +77749,7 @@ GameObject:
   - component: {fileID: 1180754427}
   - component: {fileID: 1180754428}
   - component: {fileID: 1180754429}
+  - component: {fileID: 1180754430}
   m_Layer: 0
   m_Name: SecurityGuard
   m_TagString: Enemy
@@ -78200,10 +78201,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayRangeGizmo: 1
   canPathfind: 0
-  speed: 3
+  chaseSpeed: 0
+  patrolSpeed: 0
   maxSpeed: 8
-  patrolZones: []
+  patrolPoints: []
+  canPatrol: 0
+  currentPatrolIndex: 0
+  patrolPointOffset: 0
+  idleLength: 0
   targetRange: 35
+--- !u!114 &1180754430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180754414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b039e1b4d435d59439771b159831afe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1186729011
 GameObject:
   m_ObjectHideFlags: 0
@@ -84020,6 +84038,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.subtitleSettings.minSubtitleSeconds
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: displaySettings.subtitleSettings.continueButton
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
