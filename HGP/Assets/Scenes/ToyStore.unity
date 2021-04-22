@@ -4652,7 +4652,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Karen
+  conversation: Entitled Woman
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -7570,6 +7570,41 @@ PrefabInstance:
         type: 3}
       propertyPath: conversation
       value: Player 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666589751734916104, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666589751734916104, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: color.g
+      value: 0.020314272
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666589751734916104, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666589751734916104, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: textStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666589751734916104, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: textStyleColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666589751734916104, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: textStyleColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666589751734916104, guid: c39879fcba8aa1b45b80c5ac0da6f128,
+        type: 3}
+      propertyPath: textStyleColor.b
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7666589751734916111, guid: c39879fcba8aa1b45b80c5ac0da6f128,
         type: 3}
@@ -66854,7 +66889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.1818848, y: 0.00012207031}
+  m_AnchoredPosition: {x: -3.1818848, y: 0}
   m_SizeDelta: {x: 6.991211, y: -0.71484375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074975403
