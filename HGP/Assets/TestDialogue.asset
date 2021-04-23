@@ -188,6 +188,28 @@ MonoBehaviour:
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
+  - id: 34
+    fields:
+    - title: Name
+      value: Mowhawk Man
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
   - id: 8
     fields:
     - title: Name
@@ -742,6 +764,28 @@ MonoBehaviour:
     fields:
     - title: Name
       value: Escalator Guard
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
+  - id: 35
+    fields:
+    - title: Name
+      value: Manager
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -1470,7 +1514,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_rudeCashier_01);Delay({{end}});
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -1546,7 +1590,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01)
+        value: AudioWait(vo_bearington_01)
         type: 0
         typeString: 
       conversationID: 1
@@ -1688,7 +1732,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_rudeCashier_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1753,7 +1797,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_rudeCashier_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1896,7 +1940,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_rudeCashier_04);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -2038,7 +2082,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_rudeCashier_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -2175,7 +2219,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_rudeCashier_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -2367,7 +2411,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2438,7 +2482,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_04);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2586,7 +2630,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_06);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2800,7 +2844,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_07);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2871,7 +2915,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_09);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2942,7 +2986,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_09);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3013,7 +3057,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3078,7 +3122,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3150,7 +3194,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(vo_mNPC_cs_niceCashier_08)
         type: 0
         typeString: 
       conversationID: 2
@@ -3305,7 +3349,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: SwitchCamera(Cutaway 1_2);Delay(2.5);AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: SwitchCamera(Cutaway 1_2);Delay(2.5);AudioWait(vo_mNPC_cs_niceCashier_10);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3376,7 +3420,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_11);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3512,7 +3556,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);SendMessage(ParticleOn,,Tall_front_shelf);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_niceCashier_05);SendMessage(ParticleOn,,Tall_front_shelf);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -3605,8 +3649,8 @@ MonoBehaviour:
         y: 399.07547
         width: 160
         height: 30
-    canvasScrollPosition: {x: 131.57889, y: 344.7366}
-    canvasZoom: 0.76000047
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.55000067
   - id: 3
     fields:
     - title: Title
@@ -4607,7 +4651,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Delay({{end}});
+        value: AudioWait(vo_bearington_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 4
@@ -5186,7 +5230,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_thriftyWoman_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -5328,7 +5372,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_thriftyWoman_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -5393,7 +5437,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_thriftyWoman_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -5644,7 +5688,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_concernedShopper_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 7
@@ -6300,7 +6344,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_fashionista_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -6439,7 +6483,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_fashionista_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -6507,7 +6551,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_fashionista_04);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -6573,7 +6617,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_fashionista_05);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -6639,7 +6683,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_fashionista_01);Delay({{end}});
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -6835,7 +6879,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_changingRoom_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 10
@@ -9074,7 +9118,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: Audiowait(vo_bearington_01)
         type: 0
         typeString: 
       conversationID: 16
@@ -10084,7 +10128,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_indecisiveWoman_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 21
@@ -10155,7 +10199,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_indecisiveWoman_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 21
@@ -10179,7 +10223,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 21
+        x: 22
         y: 130
         width: 160
         height: 30
@@ -10226,7 +10270,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_indecisiveWoman_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 21
@@ -10291,7 +10335,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_indecisiveWoman_04);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 21
@@ -11483,7 +11527,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_Select_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 26
@@ -15869,7 +15913,9 @@ MonoBehaviour:
           SetActive(Bratty Kid,false);
 
           SetActive(Teen
-          Bully Trigger);'
+          Bully Trigger);
+
+          Delay(3)'
         type: 0
         typeString: 
       conversationID: 34
@@ -16144,8 +16190,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 7.5
-        y: 25.3125
+        x: 24.157608
+        y: 57.07878
         width: 160
         height: 30
     - id: 1
@@ -16775,6 +16821,8 @@ MonoBehaviour:
       - title: Sequence
         value: 'AnimatorPlay(Forward_Idle,Bully Kid2);
 
+          SendMessage(DirectSet,Border,0.1);
+
           SwitchCamera(Bully
           Camera);
 
@@ -16887,7 +16935,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 406.49255
-        y: 252.36066
+        y: 250.99081
         width: 160
         height: 30
     - id: 11
@@ -17006,6 +17054,8 @@ MonoBehaviour:
       - title: Sequence
         value: 'AnimatorPlay(Forward_Idle,Bully Kid1);
 
+          SendMessage(DirectSet,Border,0.2);
+
           Delay(3);'
         type: 0
         typeString: 
@@ -17031,7 +17081,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 354
+        y: 352.50748
         width: 160
         height: 30
     - id: 13
@@ -17303,7 +17353,9 @@ MonoBehaviour:
 
           AnimatorPlay(Child_Fall,Child_1)@0.5;
 
-          Delay(1);'
+          SendMessage(DirectSet,Border,1.0)@0.5;
+
+          Delay(2);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17836,7 +17888,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'Fade(stay,3);
+
+          Delay(3);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17909,7 +17963,9 @@ MonoBehaviour:
       - title: Sequence
         value: 'AnimatorPlay(Player_IdleB,Child_1);
 
-          SetActive(Bully Camera,false);'
+          SetActive(Bully Camera,false);
+
+          SendMessage(ImmidiateLoadScene,SaveAndLoadObject,ToyStoryHorror);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17927,7 +17983,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405
+        x: 406.13635
         y: 955
         width: 160
         height: 30
@@ -18067,13 +18123,12 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.58000064
+    canvasScrollPosition: {x: 0, y: 551.2314}
+    canvasZoom: 0.5800003
   - id: 36
     fields:
     - title: Title
-      value: Teen Bully 1
+      value: Mowhawk Man
       type: 0
       typeString: 
     - title: Pictures
@@ -18163,7 +18218,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 36
@@ -18198,7 +18253,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 25
+        value: 34
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -18210,8 +18265,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Ah, man I really want to play the new Game Station. I heard the controller
-          rumbles.
+        value: Aww man...This place doesn't have it either.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -18244,16 +18298,15 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
-        for mother", 3) ~= "success")
+      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active"
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 21
-        y: 78
+        x: 20
+        y: 80
         width: 160
         height: 30
     - id: 2
@@ -18271,7 +18324,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 23
+        value: 34
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -18283,7 +18336,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Woah really? That's awesome.
+        value: How hard is it to find black studded leather boots?
         type: 0
         typeString: 
       - title: Parenthetical
@@ -18317,8 +18370,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 21
-        y: 128
+        x: 20
+        y: 130
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -18326,7 +18379,7 @@ MonoBehaviour:
   - id: 37
     fields:
     - title: Title
-      value: Teen Bully 2
+      value: Entitled Woman
       type: 0
       typeString: 
     - title: Pictures
@@ -18338,11 +18391,11 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Actor
-      value: 1
+      value: 26
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 35
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -18380,11 +18433,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: 26
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 35
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -18416,13 +18469,13 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 37
         originDialogueID: 0
         destinationConversationID: 37
-        destinationDialogueID: 2
+        destinationDialogueID: 1
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -18432,8 +18485,80 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 212.4252
-        y: 70.566925
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 35
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'EXCUSE ME! '
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 37
+        originDialogueID: 1
+        destinationConversationID: 37
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: CurrentQuestEntryState("Look for mother", 1) == "active"
+        and (CurrentQuestEntryState("Look for mother", 4) == "unassigned")
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
         width: 160
         height: 30
     - id: 2
@@ -18451,11 +18576,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 23
+        value: 26
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 35
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -18463,7 +18588,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I want to play the new Archaic Parchment game.
+        value: I've been trying to get these braindead kids to honor my coupon.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -18496,16 +18621,15 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PickedUpConsole"] == false and (CurrentQuestEntryState("Look
-        for mother", 3) ~= "success")
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 215.33958
-        y: 137.67567
+        x: 20
+        y: 130
         width: 160
         height: 30
     - id: 3
@@ -18523,11 +18647,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 23
+        value: 35
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 26
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -18535,7 +18659,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: You can customize your characters face and body in this one.
+        value: Ma'am this coupon expired last year.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -18575,8 +18699,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 213.76477
-        y: 193.97487
+        x: 20
+        y: 180
         width: 160
         height: 30
     - id: 4
@@ -18594,11 +18718,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 25
+        value: 26
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 35
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -18606,7 +18730,292 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: That's rad!
+        value: So what? You have to honor it.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 37
+        originDialogueID: 4
+        destinationConversationID: 37
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 230
+        width: 160
+        height: 30
+    - id: 5
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 35
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: But ma'am that's not how it works.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 37
+        originDialogueID: 5
+        destinationConversationID: 37
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 280
+        width: 160
+        height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 35
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: We'll see who works after I call corperate and have you fired.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 37
+        originDialogueID: 6
+        destinationConversationID: 37
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 330
+        width: 160
+        height: 30
+    - id: 7
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 35
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Hah...You're right ma'am. Please let me honor your expired $1 off
+          coupon.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 37
+        originDialogueID: 7
+        destinationConversationID: 37
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 380
+        width: 160
+        height: 30
+    - id: 8
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 35
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Now that's more like it.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -18640,12 +19049,264 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 213.76477
-        y: 243.97487
+        x: 20
+        y: 430
         width: 160
         height: 30
-    canvasScrollPosition: {x: 44.91315, y: 43.768894}
-    canvasZoom: 1.2699999
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 38
+    fields:
+    - title: Title
+      value: Distracted Man
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: 26
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 35
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 26
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 35
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 38
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 38
+        originDialogueID: 0
+        destinationConversationID: 38
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 27
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'Hmmm...What toy do I buy? '
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 38
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 38
+        originDialogueID: 1
+        destinationConversationID: 38
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: CurrentQuestEntryState("Look for mother", 1) == "active"
+        and (CurrentQuestEntryState("Look for mother", 4) == "unassigned")
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 27
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I just can't make up my mind.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 38
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 130
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
   syncInfo:
     syncActors: 0
     syncItems: 0
