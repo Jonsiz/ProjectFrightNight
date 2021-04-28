@@ -9,10 +9,10 @@ using UnityEngine.UI;
 public class DarknessFade : MonoBehaviour
 {
     private Image image;
-    private float fadeGoal = 0;
+    private float fadeGoal;
     [SerializeField]
     private Color color;
-    private float fadeSpeed = 0.05f;
+    private float fadeSpeed = 0.01f;
     [SerializeField]
     private PlayerController childStamina;
     [SerializeField]
@@ -30,30 +30,26 @@ public class DarknessFade : MonoBehaviour
     {
         //Sets the alpha of the image. See above. Originally it would just fade in or out as an environmental effect.
         color.a = image.color.a;
-        if (color.a < fadeGoal)
-        {
-            color.a += fadeSpeed;
-        }
-        else if (color.a > fadeGoal)
-        {
-            color.a -= fadeSpeed;
-        }
+        //if (color.a < fadeGoal)
+        //{
+        //    color.a += fadeSpeed;
+        //}
+        //else if (color.a > fadeGoal)
+        //{
+        //    color.a -= fadeSpeed;
+        //}
+        var exhaustion = 1.0f - childStamina.Stamina / childStamina.MaxStamina;
+        color.a = exhaustion;
+        color.a = Mathf.Round(color.a * 100f) / 100f;
+        exhaustionColor.a = color.a;
 
-        if (fadeGoal == 0)
+        if (childStamina.Exhausted)
         {
-            var exhaustion = 1.0f - childStamina.Stamina / childStamina.MaxStamina;
-            color.a = exhaustion;
-            color.a = Mathf.Round(color.a * 100f) / 100f;
-            exhaustionColor.a = color.a;
-
-            if (childStamina.Exhausted)
-            {
-                image.color = exhaustionColor;
-            }
-            else
-            {
-                image.color = color;
-            }
+            image.color = exhaustionColor;
+        }
+        else
+        {
+            image.color = color;
         }
 
         //Debug.Log(childStamina.Exhausted);
