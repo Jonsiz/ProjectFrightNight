@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Scene scene = SceneManager.GetActiveScene();
-        /*if(scene.name == "Chris_Main_Menu")
+        if(scene.name == "Chris_Main_Menu")
         {
             Play("MM_Theme");
         }
@@ -37,7 +37,7 @@ public class AudioManager : MonoBehaviour
         {
             Play("TS_Theme");
             Play("TS_Ambience");
-        }*/
+        }
 
     }
    
