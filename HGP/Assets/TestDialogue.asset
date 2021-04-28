@@ -15881,19 +15881,17 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: CurrentQuestEntryState("Look for mother", 3) == "active"
-      userScript: 'SetQuestEntryState("Look for mother", 3, "success");
+      userScript: 'SetQuestEntryState("Look for mother", 4, "active");
 
         SetQuestEntryState("Look
-        for mother", 4, "active");
-
-        Variable["PickedUpConsole"] = true'
+        for mother", 3, "success")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 22
-        y: 89.96907
+        x: 20
+        y: 77.96907
         width: 160
         height: 30
     - id: 2
@@ -16301,7 +16299,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 101.53122
+        y: 102.90109
         width: 160
         height: 30
     - id: 3
@@ -16757,7 +16755,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Hah! He doesn't even know what it's called.
+        value: Hah! He doesn' even know what it's called.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -17203,7 +17201,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Fine, I'll just take it myself.
+        value: Fine, I'll just take it myself. <Insert Shove animation>
         type: 0
         typeString: 
       - title: Parenthetical
@@ -17433,7 +17431,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I'll be taking this and your bear too.
+        value: I'll be taking this and your bear too. <Grabs bear animation>
         type: 0
         typeString: 
       - title: Parenthetical
@@ -17879,11 +17877,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: -1
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: -1
+        value: 33
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -17891,7 +17889,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: <Insert scary security guard animation>
         type: 0
         typeString: 
       - title: Parenthetical
@@ -17907,9 +17905,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'AnimatorPlay(Player_IdleB,Child_1);
-
-          SetActive(Bully Camera,false);'
+        value: AnimatorPlay(Player_IdleB,Child_1);
         type: 0
         typeString: 
       conversationID: 35
@@ -18067,7 +18063,6 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-
     canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.58000064
   - id: 36
