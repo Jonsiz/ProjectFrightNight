@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SaveAndLoadManager : MonoBehaviour
 {
@@ -57,6 +58,11 @@ public class SaveAndLoadManager : MonoBehaviour
     public void LoadingdaGame()
     {
         loading = true;
+    }
+
+    public void ImmidiateLoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
     //IEnumerator LoadingTime()
