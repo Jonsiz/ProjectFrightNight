@@ -1244,16 +1244,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pathfinding Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 2240067548253262371, guid: 2ac1f6182a33a194f8290cdf9a592124,
-        type: 3}
-      propertyPath: nodeRadius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2240067548253262371, guid: 2ac1f6182a33a194f8290cdf9a592124,
-        type: 3}
-      propertyPath: displayGridGizmos
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2240067548253262380, guid: 2ac1f6182a33a194f8290cdf9a592124,
         type: 3}
       propertyPath: m_LocalPosition.x
