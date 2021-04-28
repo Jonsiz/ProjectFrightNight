@@ -42,7 +42,7 @@ public class MusicManager : MonoBehaviour
     }
     void ChooseLevelTrack(string name)
     {
-        if(name == "Chris_MainMenu")
+        if(name == "Chris_Main_Menu")
         {
             source1.clip = MM_THEME;
             source1.Play();
