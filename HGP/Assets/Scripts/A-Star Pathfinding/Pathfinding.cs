@@ -6,49 +6,39 @@ using System;
 
 public class Pathfinding : MonoBehaviour
 {
-    // No longer needed because we're using the PathRequestManager script.
-    //public Transform seeker, target;
-
     // Reference to the Grid script.
     Grid grid;
 
     // Reference to PathRequestManager script.
-    PathRequestManager requestManager;
+    //PathRequestManager requestManager;
 
     private void Awake()
     {
-        requestManager = GetComponent<PathRequestManager>();
+        //requestManager = GetComponent<PathRequestManager>();
         grid = GetComponent<Grid>();
     }
 
     private void Update()
     {
-        /* Uncomment this to use the spacebar to control when the pathfinding triggers.
-        
-        if (Input.GetButtonDown("Jump"))
-        {
-            FindPath(seeker.position, target.position);
-        }*/
-        
-        // We no longer need to call this method in Update because this will be handled in a separate class.
-        // Good to delete all of Update if desired.
-        //FindPath(seeker.position, target.position);
-    }
 
+    }
+    /* Removed for threading.
     public void StartFindPath(Vector3 startPos, Vector3 targetPos)
     {
         StartCoroutine(FindPath(startPos, targetPos));
     }
-    IEnumerator FindPath(Vector3 startPos, Vector3 targetPos)
+    */
+
+    public void FindPath(PathRequest request, Action<PathResult> callback) //If not threading, change this back to IEnumerator and paramters to "(Vector3 startPos, Vector3 targetPos)"
     {
-        Stopwatch sw = new Stopwatch();
-        sw.Start();
+        //Stopwatch sw = new Stopwatch();
+        //sw.Start();
 
         Vector3[] waypoints = new Vector3[0];
         bool pathSuccess = false;
 
-        Node startNode = grid.NodeFromWorldPoint(startPos);
-        Node targetNode = grid.NodeFromWorldPoint(targetPos);
+        Node startNode = grid.NodeFromWorldPoint(request.pathStart); //originally startPos
+        Node targetNode = grid.NodeFromWorldPoint(request.pathEnd); //originally targetPos
 
         if (startNode.walkable && targetNode.walkable)
         {
@@ -64,8 +54,8 @@ public class Pathfinding : MonoBehaviour
 
                 if (currentNode == targetNode)
                 {
-                    sw.Stop();
-                    print("Path found: " + sw.ElapsedMilliseconds + " ms");
+                    //sw.Stop();
+                    //print("Path found: " + sw.ElapsedMilliseconds + " ms");
                     pathSuccess = true;
                     break;
                 }
@@ -86,19 +76,25 @@ public class Pathfinding : MonoBehaviour
                         {
                             openSet.Add(neighbor);
                         }
+                        else
+                        {
+                            openSet.UpdateItem(neighbor);
+                        }
                     }
                 }
             }
         }
 
-        // Wait for one frame before returning.
-        yield return null;
+        //yield return null;
 
         if (pathSuccess)
         {
             waypoints = RetracePath(startNode, targetNode);
+            pathSuccess = waypoints.Length > 0;
         }
-        requestManager.FinishedProcessingPath(waypoints, pathSuccess);
+
+        //requestManager.FinishedProcessingPath(waypoints, pathSuccess);
+        callback(new PathResult(waypoints, pathSuccess, request.callback));
     }
 
     Vector3[] RetracePath(Node startNode, Node endNode)
