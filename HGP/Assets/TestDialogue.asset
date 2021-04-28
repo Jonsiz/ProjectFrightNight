@@ -1499,7 +1499,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
+        x: 19.999992
         y: 79.93617
         width: 160
         height: 30
@@ -1570,8 +1570,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 18
-        y: 135
+        x: 16.936157
+        y: 137.12767
         width: 160
         height: 30
     - id: 3
@@ -1641,8 +1641,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 18
-        y: 209.93619
+        x: 20.127655
+        y: 202.48938
         width: 160
         height: 30
     - id: 4
@@ -1706,8 +1706,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 16
-        y: 274
+        x: 17.063828
+        y: 260.1702
         width: 160
         height: 30
     - id: 5
@@ -4307,8 +4307,8 @@ MonoBehaviour:
         y: 150
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 78.72342}
-    canvasZoom: 0.94000006
+    canvasScrollPosition: {x: 28.571442, y: 34.065918}
+    canvasZoom: 0.9100001
   - id: 4
     fields:
     - title: Title
@@ -4858,7 +4858,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_ew_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -4929,7 +4929,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_ew_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -4947,7 +4947,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 25
+        x: 24.082565
         y: 217
         width: 160
         height: 30
@@ -4994,7 +4994,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_ew_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -5824,7 +5824,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_disgruntledMan_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -5895,7 +5895,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_disgruntledMan_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -5919,8 +5919,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 57
-        y: 252
+        x: 58
+        y: 253
         width: 160
         height: 30
     - id: 3
@@ -5966,7 +5966,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_disgruntledMan_04);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -6031,7 +6031,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_mNPC_cs_disgruntledMan_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -7015,7 +7015,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_struggle_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -7086,7 +7086,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_struggle_03);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -7151,7 +7151,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_struggle_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -7176,7 +7176,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 25
-        y: 120
+        y: 119
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 33}
@@ -10872,7 +10872,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: AudioWait(vo_fNPC_cs_granny_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 23
@@ -10943,7 +10943,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(vo_fNPC_cs_granny_02);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 23
