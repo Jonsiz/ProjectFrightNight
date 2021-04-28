@@ -38,7 +38,6 @@ public class DarknessFade : MonoBehaviour
         {
             color.a -= fadeSpeed;
         }
-        image.color = color;
 
         if (fadeGoal == 0)
         {
@@ -58,13 +57,6 @@ public class DarknessFade : MonoBehaviour
         }
 
         //Debug.Log(childStamina.Exhausted);
-    }
-
-    public void DirectSet(string alphabetsoup)
-    {
-        fadeGoal = float.Parse(alphabetsoup);
-        color.a = float.Parse(alphabetsoup);
-        image.color = color;
     }
 
     void Update()

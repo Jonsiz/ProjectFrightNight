@@ -15913,9 +15913,7 @@ MonoBehaviour:
           SetActive(Bratty Kid,false);
 
           SetActive(Teen
-          Bully Trigger);
-
-          Delay(3)'
+          Bully Trigger);'
         type: 0
         typeString: 
       conversationID: 34
@@ -16190,8 +16188,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 24.157608
-        y: 57.07878
+        x: 7.5
+        y: 25.3125
         width: 160
         height: 30
     - id: 1
@@ -16821,8 +16819,6 @@ MonoBehaviour:
       - title: Sequence
         value: 'AnimatorPlay(Forward_Idle,Bully Kid2);
 
-          SendMessage(DirectSet,Border,0.1);
-
           SwitchCamera(Bully
           Camera);
 
@@ -16935,7 +16931,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 406.49255
-        y: 250.99081
+        y: 252.36066
         width: 160
         height: 30
     - id: 11
@@ -17054,8 +17050,6 @@ MonoBehaviour:
       - title: Sequence
         value: 'AnimatorPlay(Forward_Idle,Bully Kid1);
 
-          SendMessage(DirectSet,Border,0.2);
-
           Delay(3);'
         type: 0
         typeString: 
@@ -17081,7 +17075,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 405
-        y: 352.50748
+        y: 354
         width: 160
         height: 30
     - id: 13
@@ -17353,9 +17347,7 @@ MonoBehaviour:
 
           AnimatorPlay(Child_Fall,Child_1)@0.5;
 
-          SendMessage(DirectSet,Border,1.0)@0.5;
-
-          Delay(2);'
+          Delay(1);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17888,9 +17880,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(stay,3);
-
-          Delay(3);'
+        value: 
         type: 0
         typeString: 
       conversationID: 35
@@ -17963,9 +17953,7 @@ MonoBehaviour:
       - title: Sequence
         value: 'AnimatorPlay(Player_IdleB,Child_1);
 
-          SetActive(Bully Camera,false);
-
-          SendMessage(ImmidiateLoadScene,SaveAndLoadObject,ToyStoryHorror);'
+          SetActive(Bully Camera,false);'
         type: 0
         typeString: 
       conversationID: 35
@@ -17983,7 +17971,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 406.13635
+        x: 405
         y: 955
         width: 160
         height: 30
@@ -18123,8 +18111,8 @@ MonoBehaviour:
         y: 459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 551.2314}
-    canvasZoom: 0.5800003
+    canvasScrollPosition: {x: 0, y: 611.36365}
+    canvasZoom: 0.88
   - id: 36
     fields:
     - title: Title
