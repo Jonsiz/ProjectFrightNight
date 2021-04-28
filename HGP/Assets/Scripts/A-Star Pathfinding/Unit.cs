@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Unit : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class Unit : MonoBehaviour
     float patrolSpeed;
     [SerializeField]
     float maxSpeed;
+    [SerializeField]
+    public float turnDistance;
 
     [SerializeField]
     Transform[] patrolPoints;
@@ -41,8 +44,12 @@ public class Unit : MonoBehaviour
     float targetRange;
 
     Transform target;
-    Vector3[] path;
-    int targetIndex;
+
+    // Vector3[] path;  uncomment these if needed
+    // int targetIndex;
+
+    Path path;
+
     bool isChasing;
 
     private float xSpeed;
@@ -97,23 +104,51 @@ public class Unit : MonoBehaviour
         //enemyAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
     }
 
-    public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
+    public void OnPathFound(Vector3[] waypoints, bool pathSuccessful)
     {
         if (pathSuccessful)
         {
-            path = newPath;
+            path = new Path(waypoints, transform.position, turnDistance);
             StopCoroutine("FollowPath");
             StartCoroutine("FollowPath");
         }
     }
 
-    IEnumerator FollowPath()
+    IEnumerator FollowPath() // uncomment within this section if needed
     {
-        Vector3 currentWaypoint = path[0];
+        float currentSpeed;
 
-        while (true)
+        if (isChasing)
+            currentSpeed = chaseSpeed;
+        else
+            currentSpeed = patrolSpeed;
+
+        //Vector3 currentWaypoint = path[0];
+        bool followingPath = true;
+        int pathIndex = 0;
+
+        while (followingPath)
         {
-            if (transform.position == currentWaypoint)
+            Vector2 position = new Vector2(transform.position.x, transform.position.y);
+            while (path.turnBoundaries[pathIndex].HasCrossedLine(position))
+            {
+                if (pathIndex == path.finishLineIndex)
+                {
+                    followingPath = false;
+                    break;
+                }
+                else
+                {
+                    pathIndex++;
+                }
+            }
+
+            if (followingPath)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, path.lookPoints[pathIndex], currentSpeed * Time.deltaTime);
+            }
+
+            /*if (transform.position == currentWaypoint)
             {
                 targetIndex++;
 
@@ -132,7 +167,7 @@ public class Unit : MonoBehaviour
             else
                 currentSpeed = patrolSpeed;
 
-            transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, currentSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, currentSpeed * Time.deltaTime);*/
             yield return null;
         }
     }
@@ -176,14 +211,6 @@ public class Unit : MonoBehaviour
         PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
     }
 
-    public void Idle()
-    {
-        if (idleLength > 0)
-        {
-            idleLength -= Time.deltaTime;
-        }
-    }
-
     public bool CanFindPlayer()
     {
         // Find the Player in the scene, and get a reference to the Player Controller script.
@@ -207,23 +234,24 @@ public class Unit : MonoBehaviour
     public void OnDrawGizmos()
     {
         if (displayPathGizmo)
-        if (path != null)
-        {
-            for (int i = targetIndex; i < path.Length; i++)
-            {
-                Gizmos.color = Color.black;
-                Gizmos.DrawCube(path[i], Vector3.one);
+            if (path != null)
+                path.DrawWithGizmos();
+            /*{
+                for (int i = targetIndex; i < path.Length; i++)
+                {
+                    Gizmos.color = Color.black;
+                    Gizmos.DrawCube(path[i], Vector3.one);
 
-                if (i == targetIndex)
-                {
-                    Gizmos.DrawLine(transform.position, path[i]);
+                    if (i == targetIndex)
+                    {
+                        Gizmos.DrawLine(transform.position, path[i]);
+                    }
+                    else
+                    {
+                        Gizmos.DrawLine(path[i - 1], path[i]);
+                    }
                 }
-                else
-                {
-                    Gizmos.DrawLine(path[i - 1], path[i]);
-                }
-            }
-        }
+            }*/
 
         // Gizmo used to display the Unit's targeting range in the editor, if this feature is enabled.
         if (displayRangeGizmo)
