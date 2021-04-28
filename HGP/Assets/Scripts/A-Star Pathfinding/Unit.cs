@@ -16,25 +16,12 @@ public class Unit : MonoBehaviour
     }
 
     [SerializeField]
-    float chaseSpeed;
-    [SerializeField]
-    float patrolSpeed;
+    float speed;
     [SerializeField]
     float maxSpeed;
 
     [SerializeField]
-    Transform[] patrolPoints;
-    [SerializeField]
-    bool canPatrol;
-    [SerializeField]
-    private int currentPatrolIndex;
-    [SerializeField]
-    private float patrolPointOffset; //Used to set how close the Unit needs to be to the Patrol Point before registering it.
-
-    [SerializeField]
-    private float idleLength;
-    private float timer;
-
+    Transform[] patrolZones;
     [SerializeField]
     float targetRange;
 
@@ -47,16 +34,15 @@ public class Unit : MonoBehaviour
     private float ySpeed;
     private float prevX;
     private float prevY;
-   // private Animator enemyAnimator;
+    private Animator enemyAnimator;
 
     private PixelCrushers.DialogueSystem.Usable usable;
 
 
     void Awake()
     {
-       // enemyAnimator = GetComponent<Animator>();
+        enemyAnimator = GetComponent<Animator>();
         usable = GetComponent<PixelCrushers.DialogueSystem.Usable>();
-        timer = idleLength;
     }
 
     private void Update()
@@ -67,16 +53,12 @@ public class Unit : MonoBehaviour
             {
                 isChasing = true;
                 target = GameObject.FindGameObjectWithTag("Player").transform;
-                PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound)); //Remove "new PathRequest" if not using multithreading
+                PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
             }
             else
             {
                 isChasing = false;
-                if (canPatrol)
-                {
-                    PatrolArea();
-                    //PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound)); //Remove "new PathRequest" if not using multithreading
-                }
+                StopCoroutine("FollowPath");
             }
         }
 
@@ -122,61 +104,23 @@ public class Unit : MonoBehaviour
                 currentWaypoint = path[targetIndex];
             }
 
-            float currentSpeed;
-
-            if (isChasing)
-                currentSpeed = chaseSpeed;
-            else
-                currentSpeed = patrolSpeed;
-
-            transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, currentSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, speed * Time.deltaTime);
             yield return null;
         }
     }
 
-    public void PatrolArea()
+    /*public void PatrolArea()
     {
-
-        if (Vector2.Distance(transform.position, patrolPoints[currentPatrolIndex].position) < patrolPointOffset)
+        for (int i = 0; i < patrolZones.Length; i++)
         {
-            StopCoroutine("FollowPath");
+            target = patrolZones[i];
 
-            if (timer > 0)
+            while (transform.position != target.position)
             {
-                timer -= Time.deltaTime;
+                PathRequestManager.RequestPath(transform.position, target.position, OnPathFound);
             }
-            else if (timer <= 0)
-            {
-                if (currentPatrolIndex >= patrolPoints.Length - 1)
-                {
-                    currentPatrolIndex = 0;
-                }
-                else
-                {
-                    currentPatrolIndex++;
-                }
-
-                target = patrolPoints[currentPatrolIndex].transform;
-                PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
-                timer = idleLength;
-            }
-
-            Debug.Log(timer.ToString());
         }
-        else
-        {
-            target = patrolPoints[currentPatrolIndex].transform;
-            PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
-        }
-    }
-
-    public void Idle()
-    {
-        if (idleLength > 0)
-        {
-            idleLength -= Time.deltaTime;
-        }
-    }
+    }*/
 
     public bool CanFindPlayer()
     {
