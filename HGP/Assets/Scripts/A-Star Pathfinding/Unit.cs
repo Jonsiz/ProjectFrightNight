@@ -8,6 +8,8 @@ public class Unit : MonoBehaviour
     [SerializeField]
     bool displayRangeGizmo;
     [SerializeField]
+    bool displayPathGizmo;
+    [SerializeField]
     bool canPathfind;
 
     public bool CanPathFind
@@ -80,7 +82,7 @@ public class Unit : MonoBehaviour
             }
         }
 
-        GetComponent<AnimatorMovementUpdate>().AnimationUpdate();
+        // GetComponent<AnimatorMovementUpdate>().AnimationUpdate();
         //The code below calculates the speed the enemy is moving in order to inform Unity's animator.
         //xSpeed = transform.position.x - prevX;
         //ySpeed = transform.position.y - prevY;
@@ -157,18 +159,21 @@ public class Unit : MonoBehaviour
                     currentPatrolIndex++;
                 }
 
-                target = patrolPoints[currentPatrolIndex].transform;
-                PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
+                //target = patrolPoints[currentPatrolIndex].transform;
+                //PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
                 timer = idleLength;
             }
 
             Debug.Log(timer.ToString());
         }
-        else
+        /*else
         {
             target = patrolPoints[currentPatrolIndex].transform;
             PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
-        }
+        }*/
+
+        target = patrolPoints[currentPatrolIndex].transform;
+        PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
     }
 
     public void Idle()
@@ -201,6 +206,7 @@ public class Unit : MonoBehaviour
 
     public void OnDrawGizmos()
     {
+        if (displayPathGizmo)
         if (path != null)
         {
             for (int i = targetIndex; i < path.Length; i++)
